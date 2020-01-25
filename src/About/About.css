@@ -1,7 +1,7 @@
 .about-section {
   padding: 15px;
   background-color: #fff;
-  min-height: 51vh;
+  /* min-height: 51vh; */
 }
 
 /* .about-section .word-list li{
@@ -13,3 +13,9 @@
   text-decoration: underline;
   color: black;
 }
+
+/* .my-code {
+  color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+} */

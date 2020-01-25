@@ -1,0 +1,15 @@
+{
+  "things I speak": [
+    "HTML5",
+    "CSS3",
+    "Javascript",
+    "jQuery",
+    "React",
+    "Git",
+    "AJAX",
+    "Node",
+    "Postgres",
+    "Python"
+  ], // don't worry i still speak english
+  "tools": ["Git"]
+}

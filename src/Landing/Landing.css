@@ -1,5 +1,5 @@
 .landing {
-  height: 40vh; /* Either 40, 50, or 60vh */
+  height: 50vh; /* Either 40, 50, or 60vh */
   text-align: center;
   display: flex;
   flex-direction: column;
