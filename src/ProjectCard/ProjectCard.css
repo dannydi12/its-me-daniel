@@ -19,6 +19,7 @@
 
 .project-image {
   width: 100%;
+  height: 185px;
 }
 
 .project-title {
@@ -46,13 +47,20 @@
 }
 
 .project-links a {
-  /* color: #fff; */
+  color: #a29bfe;
   text-decoration: none;
-  /* border-color: #fff; */
-  padding: 0;
+  border: 3px solid #a29bfe;
+  padding: 10px;
+  min-width: fit-content;
+  width: 30%;
+  text-align: center;
 }
 
 .project-links a:hover {
-  /* color: #d597ce; */
-  /* border-color: #d597ce; */
+  color: #fff;
+  background-color: #a29bfe;
+}
+
+.language {
+  color: rgb(112, 112, 112);
 }
