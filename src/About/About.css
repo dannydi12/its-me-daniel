@@ -4,7 +4,12 @@
   min-height: 60vh;
 }
 
-.about-section .word-list li{
+/* .about-section .word-list li{
   background-color: #393E41;
   color: #F6F7EB;
+} */
+
+.test {
+  text-decoration: underline;
+  color: black;
 }
