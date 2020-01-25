@@ -1,9 +1,14 @@
 import React from 'react';
+import './Contact.css';
 
 function Contact() {
   return(
-    <section>
-
+    <section className='contact-section'>
+      <div className='section-wrapper'>
+        <header>
+          <h2>Contact</h2>
+        </header>
+      </div>
     </section>
   );
 }
