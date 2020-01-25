@@ -10,7 +10,7 @@ const STORE = [
   },
   {
     title: 'Mocking Text Generator',
-    category: ['Featured', 'Professional'],
+    category: ['Featured', 'Passion Projects'],
     description: 'A satirical web app to generate randomly capitalized text based on user input. Not to be used for psychological warfare.',
     image: '/images/meme-generator.png',
     languages: ['HTML', 'CSS', 'Javascript', 'jQuery'],
@@ -19,7 +19,7 @@ const STORE = [
   },
   {
     title: 'So You Think You\'re an Elon Musk Fanboy?',
-    category: ['Side-Projects'],
+    category: ['Passion Projects'],
     description: 'An online quiz app to test your knowledge of Elon Musk and his achievements.',
     image: '/images/quiz.png',
     languages: ['HTML', 'CSS', 'Javascript', 'jQuery'],
