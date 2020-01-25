@@ -7,15 +7,15 @@
   color: white;
 }
 
-h1 {
-  margin: 0;
-}
-
 .landing-container {
   height: 50%;
   justify-content: center;
   display: flex;
   flex-direction: column;
+}
+
+h1 {
+  margin: 0;
 }
 
 .landing svg {
