@@ -1,14 +1,14 @@
 import React from 'react';
-import './ProjectNav';
+import './ProjectNav.css';
 
 function ProjectNav(props) {
   const categories = props.categories.map((category, i) => (
-    <li key={i} onClick={() => props.update(category)} className={'nav-title' + props.currentCategory === category ? 'nav-underline' : ''}>
-      {category}
+    <li key={i} onClick={() => props.update(category)}>
+      {props.currentCategory === category ? <span className='nav-underline'>{category}</span> : category}
     </li>
   ));
   return (
-    <nav>
+    <nav className='project-nav'>
       <ul>
         {categories}
       </ul>

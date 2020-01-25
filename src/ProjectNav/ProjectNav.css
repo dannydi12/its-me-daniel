@@ -1,0 +1,22 @@
+.project-nav {
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.project-nav ul {
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.project-nav ul li {
+  width: 100%;
+  text-align: center;
+}
+
+.nav-underline {
+  border-bottom: 4px solid #a29bfe;
+}
