@@ -1,8 +1,5 @@
 import React from 'react';
-import { useMediaQuery } from 'react-responsive';
 import './App.css';
-import widthContext from './widthContext';
-import WordList from './WordList/WordList';
 import Landing from './Landing/Landing';
 import About from './About/About';
 
