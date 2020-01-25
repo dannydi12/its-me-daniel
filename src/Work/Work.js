@@ -10,7 +10,12 @@ function Work() {
   return (
     <section className='work-section'>
       <div className='section-wrapper'>
-        {displayProjects}
+        <header>
+          <h2>Work</h2>
+        </header>
+        <div className='projects'>
+          {displayProjects}
+        </div>
       </div>
     </section>
   );
