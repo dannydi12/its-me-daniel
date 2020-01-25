@@ -1,0 +1,9 @@
+.about-section {
+  padding: 15px;
+  background-color: #fff;
+}
+
+.about-section .word-list li{
+  background-color: #393E41;
+  color: #F6F7EB;
+}
