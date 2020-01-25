@@ -1,13 +1,15 @@
 .project-card {
   /* background-color: #745c97; */
-  margin-top: 30px;
-  margin-bottom: 50px;
   /* box-shadow: 1px 1px #d597ce, 
   2px 2px #d597ce,
   3px 3px #d597ce,
   4px 4px #d597ce,
   5px 5px #d597ce; */
-  max-width: 650px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .project-wrapper {
@@ -25,8 +27,10 @@
   margin-bottom: 0.5em;
 }
 
-.projects-section li {
-  /* background-color: #d597ce; */
+.project-card li {
+  background-color: #fff;
+  border: 3px solid #a29bfe;
+  color: #a29bfe;
   padding: 10px;
   margin: 10px;
 }
@@ -42,9 +46,9 @@
 }
 
 .project-links a {
-  color: #fff;
+  /* color: #fff; */
   text-decoration: none;
-  border-color: #fff;
+  /* border-color: #fff; */
   padding: 0;
 }
 

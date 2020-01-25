@@ -7,9 +7,11 @@ function Work() {
   let displayProjects = STORE.map((project, i) =>
     (<ProjectCard key={i} project={project} />)
   );
-  return(
+  return (
     <section className='work-section'>
-      {displayProjects}
+      <div className='section-wrapper'>
+        {displayProjects}
+      </div>
     </section>
   );
 }
