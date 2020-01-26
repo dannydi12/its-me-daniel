@@ -1,13 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import NotFound from './NotFound/NotFound';
+import Attribution from './Attribution/Attribution';
 
 ReactDOM.render(
   <BrowserRouter>
-    <Route exact path='/' component={App} />
+    <Switch>
+      <Route exact path='/' component={App} />
+      <Route exact path='/attribution' component={Attribution} />
+      <Route component={NotFound} />
+    </Switch>
   </BrowserRouter>,
   document.getElementById('root'));
 
