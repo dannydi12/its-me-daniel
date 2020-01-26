@@ -9,13 +9,27 @@
   color: #F6F7EB;
 } */
 
-.test {
+.underline {
   text-decoration: underline;
   color: black;
 }
 
-/* .my-code {
-  color: #fff;
-  padding: 15px;
-  border-radius: 10px;
-} */
+.blinking-cursor {
+  animation: 2s blink ease-in infinite;
+}
+
+.blinking-cursor>span {
+  color: #fff !important;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
