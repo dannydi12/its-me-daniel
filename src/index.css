@@ -13,12 +13,21 @@ body {
   font-size: 1.2em;
 }
 
-p {
+p, li, button {
   /* font-size: 22px; */
   /* line-height: 33px; */
   font-size: 1.15em;
   line-height: 1.5em;
   -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: #6e66df;
+}
+
+a:hover {
+  color: #a29bfe;
+
 }
 
 h1 {
@@ -29,6 +38,20 @@ h2 {
   text-align: center;
   font-size: 2.3em;
   /* margin-top: 1.1em; */
+}
+
+button {
+  border: 3px #a29bfe solid;
+  padding: 10px;
+  margin: 0 auto;
+  display: block;
+  color: #a29bfe;
+}
+
+button:hover {
+  background-color: #a29bfe;
+  color: #fff;
+  cursor: pointer;
 }
 
 code {
