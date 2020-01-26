@@ -24,5 +24,3 @@ function Contact() {
 }
 
 export default Contact;
-
-// What's%20the%20meaning%20of%20Life,%20the%20Universe,%20and%20Everything?\n\nWarmly,\nYour%20Bestest%20Friend
