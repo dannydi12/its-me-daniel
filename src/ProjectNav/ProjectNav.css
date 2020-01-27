@@ -20,3 +20,34 @@
 .nav-underline {
   border-bottom: 4px solid #a29bfe;
 }
+
+.project-nav ul li > button{
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-color: #fff;
+  color: #000;
+  width: 100%;
+  text-align: center;
+}
+
+.project-nav button:focus {
+  outline: none;
+}
+
+.project-nav button:focus > .b-text {
+  outline: none;
+  border-bottom: 4px solid #a29bfe;
+}
+
+.project-nav button:hover > .b-text {
+  border-bottom: 4px solid #a29bfe;
+}
+
+.project-nav button:hover{
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-color: #fff;
+  color: #000;
+}

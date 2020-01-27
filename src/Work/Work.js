@@ -15,7 +15,7 @@ function Work() {
       <div className='section-wrapper'>
         <header>
           <h2>Work</h2>
-          <ProjectNav categories={['Featured', 'Passion Projects']} update={setCategoryState} currentCategory={categoryState}/>
+          <ProjectNav categories={['Featured', 'Freelance']} update={setCategoryState} currentCategory={categoryState}/>
         </header>
         <div className='projects'>
           {filteredProjects}
