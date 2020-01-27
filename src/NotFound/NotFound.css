@@ -1,7 +1,7 @@
 .not-found {
   font-size: 1em;
   background-color: #a29bfe;
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
   padding: 15px;
   display: flex;

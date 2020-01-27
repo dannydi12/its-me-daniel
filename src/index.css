@@ -46,6 +46,7 @@ button {
   margin: 0 auto;
   display: block;
   color: #a29bfe;
+  background-color: #fff;
 }
 
 button:hover {
