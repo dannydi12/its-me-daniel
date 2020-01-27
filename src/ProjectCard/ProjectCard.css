@@ -1,20 +1,13 @@
 .project-card {
-  /* box-shadow: 1px 1px #d597ce, 
-  2px 2px #d597ce,
-  3px 3px #d597ce,
-  4px 4px #d597ce,
-  5px 5px #d597ce; */
   margin-top: 30px;
   margin-bottom: 50px;
   max-width: 355px;
   margin-left: auto;
   margin-right: auto;
-  /* box-shadow: 1px 1px 200px rgb(187, 187, 187); */
 }
 
 .project-wrapper {
   padding: 1em;
-  /* padding-top: 0; */
 }
 
 .project-image {

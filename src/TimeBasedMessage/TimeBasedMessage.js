@@ -4,10 +4,6 @@ import moment from 'moment';
 function TimeBasedMesage() {
   const [time, updateTime] = useState(moment().format('h:mma'));
 
-  // useEffect(() => {
-  //   console.log(time);
-  // }, [time]);
-
   useEffect(() => {
     const interval = setInterval(() => updateTime(moment().format('h:mma')), 1000);
     return () => clearInterval(interval);

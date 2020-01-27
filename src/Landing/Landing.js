@@ -24,7 +24,6 @@ function Landing() {
       })}>
       <div className='landing-container'>
         <h1>Hi, it's me. Daniel.</h1>
-        {/* <p>I'm a web developer</p> */}
       </div>
       <Avatar
         avatarStyle='Transparent'
