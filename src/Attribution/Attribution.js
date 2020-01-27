@@ -1,8 +1,8 @@
 import React from 'react';
 import './Attribution.css';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 
-function Attribution(props) {
+function Attribution() {
   return (
     <main className='attribution'>
       <div className='attribution-container'>

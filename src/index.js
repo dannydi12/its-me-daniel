@@ -6,9 +6,11 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import NotFound from './NotFound/NotFound';
 import Attribution from './Attribution/Attribution';
+import ScrollToTop from './ScrollToTop/ScrollToTop';
 
 ReactDOM.render(
   <BrowserRouter>
+  <ScrollToTop />
     <Switch>
       <Route exact path='/' component={App} />
       <Route exact path='/attribution' component={Attribution} />
