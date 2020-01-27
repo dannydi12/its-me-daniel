@@ -6,7 +6,7 @@ function ProjectCard(props) {
   return (
     <div className='project-card'>
       <LazyLoad offset={200} once>
-        <img className='project-image' src={props.project.image} alt={props.project.title + ' landing page'} />
+        <img className='project-image' src={props.project.image} alt={props.project.title + ' landing page.'} />
       </LazyLoad>
       <div className='project-wrapper'>
         <h5 className='project-title'>{props.project.title}</h5>
