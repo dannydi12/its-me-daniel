@@ -7,6 +7,11 @@
   "routes": [
     {
       "src": "/(.*)",
+      "status": 200,
+      "dest": "/"
+    },
+    {
+      "src": "/(.*)",
       "status": 404,
       "dest": "/not-found"
     }
