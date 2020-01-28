@@ -6,19 +6,9 @@
   ],
   "routes": [
     {
-      "src": "/",
-      "status": 200,
-      "dest": "/"
-    },
-    {
-      "src": "/attribution",
-      "status": 200,
-      "dest": "/attribution"
-    },
-    {
-      "src": "/(.*)",
-      "status": 404,
-      "dest": "/not-found"
+      "src": "(.*)",
+      "dest": "/www/$1",
+      "continue": true
     }
   ]
 }
