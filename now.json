@@ -4,12 +4,5 @@
   "alias": [
     "imdan.io",
     "portfolio"
-  ],
-  "routes": [
-    {
-      "src": "(.*)",
-      "dest": "/www/$1",
-      "continue": true
-    }
   ]
 }
