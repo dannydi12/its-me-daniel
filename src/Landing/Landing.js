@@ -14,14 +14,15 @@ function Landing() {
         eyes: expression.eyes === 'Happy' ? 'Surprised' : 'Happy',
         mouth: expression.mouth === 'Smile' ? 'ScreamOpen' : 'Smile'
       })}
-      onMouseEnter={() => setExpression({
+      onMouseEnter={() => window.innerWidth > 900 && setExpression({
         eyes: expression.eyes === 'Happy' ? 'Surprised' : 'Happy',
         mouth: expression.mouth === 'Smile' ? 'ScreamOpen' : 'Smile'
       })}
-      onMouseLeave={() => setExpression({
+      onMouseLeave={() => window.innerWidth > 900 && setExpression({
         eyes: expression.eyes === 'Happy' ? 'Surprised' : 'Happy',
         mouth: expression.mouth === 'Smile' ? 'ScreamOpen' : 'Smile'
-      })}>
+      })}
+      >
       <div className='landing-container'>
         <h1>Hi, it's me. Daniel.</h1>
       </div>
