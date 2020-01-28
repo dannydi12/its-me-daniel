@@ -3,5 +3,12 @@
   "version": 2,
   "alias": [
     "imdan.io"
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "status": 404,
+      "dest": "/not-found"
+    }
   ]
 }
