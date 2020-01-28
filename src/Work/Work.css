@@ -1,4 +1,8 @@
-.work-section .projects {
+.projects {
   display: flex;
   flex-wrap: wrap;
+}
+
+.projects > .react-reveal {
+  margin: 0 auto;
 }
