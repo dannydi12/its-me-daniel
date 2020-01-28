@@ -1,14 +1,23 @@
 {
-  "name": "portfolio",
+  "name": "its-me-daniel",
   "version": 2,
-  "alias": [
-    "imdan.io"
-  ],
   "routes": [
     {
-      "src": "(.*)",
-      "dest": "/www/$1",
+      "src": "/(.*)",
       "continue": true
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/$1",
+      "continue": true
+    },
+    {
+      "handle": "filesystem"
+    },
+    {
+      "src": "/.*",
+      "status": 404,
+      "dest": "/404"
     }
   ]
 }
