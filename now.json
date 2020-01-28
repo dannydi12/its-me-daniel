@@ -8,16 +8,14 @@
     },
     {
       "src": "/(.*)",
-      "dest": "/$1",
-      "continue": true
+      "dest": "/$1"
     },
     {
       "handle": "filesystem"
     },
     {
       "src": "/.*",
-      "status": 404,
-      "dest": "/404"
+      "dest": "/"
     }
   ]
 }
