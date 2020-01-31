@@ -7,6 +7,10 @@ import * as serviceWorker from './serviceWorker';
 import NotFound from './NotFound/NotFound';
 import Attribution from './Attribution/Attribution';
 import ScrollToTop from './ScrollToTop/ScrollToTop';
+import ReactGA from 'react-ga';
+
+ReactGA.initialize('UA-157458767-1');
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 ReactDOM.render(
   <BrowserRouter>
