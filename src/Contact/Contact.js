@@ -28,6 +28,9 @@ function Contact() {
               throw new Error(response)
             }
           })
+          .catch(err => {
+            
+          })
       }
     }
   }
