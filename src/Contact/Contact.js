@@ -1,9 +1,36 @@
-import React from 'react';
+import React, { useState } from 'react';
+import moment from 'moment-timezone';
+import ReactGA from 'react-ga';
 import './Contact.css';
 import TimeBasedMesage from '../TimeBasedMessage/TimeBasedMessage';
-import ReactGA from 'react-ga';
+
+require('dotenv').config()
 
 function Contact() {
+  const [danielGotScared, setDanielGotScared] = useState(false);
+
+  const handleClick = () => {
+    if (!danielGotScared) {
+      setDanielGotScared(true);
+      const currentTimePST = moment().tz("America/Los_Angeles").hour();
+
+      if (currentTimePST >= 8 && currentTimePST <= 22) {
+        fetch(process.env.REACT_APP_API_URL, {
+          method: 'PUT',
+          mode: 'cors',
+          headers: {
+            'Authorization': process.env.REACT_APP_API_KEY
+          }
+        })
+          .then(response => {
+            if (!response.ok) {
+              throw new Error(response)
+            }
+          })
+      }
+    }
+  }
+
   const clickEvent = (type) => {
     ReactGA.event({
       category: 'User',
@@ -23,6 +50,7 @@ function Contact() {
           <h2>Contact</h2>
         </header>
         <TimeBasedMesage />
+        {console.log()}
         <ul>
           <li>
             <a onMouseEnter={() => hoverEvent('Github')}
@@ -47,7 +75,12 @@ function Contact() {
           </li>
         </ul>
         <p>If traditional methods of communication aren't your thing, click the button and it will turn on the custom LED system I installed in my room. It's pretty jarring, and I'll just think it's the robot uprising.</p>
-        <button onClick={() => clickEvent('\'Scare Daniel\'')}>Scare Daniel</button>
+        <button onClick={() => {
+          clickEvent('\'Scare Daniel\'')
+          handleClick()
+        }}>
+          Scare Daniel
+        </button>
       </div>
     </section>
   );
