@@ -19,7 +19,8 @@ function Contact() {
           method: 'PUT',
           mode: 'cors',
           headers: {
-            'Authorization': process.env.REACT_APP_API_KEY
+            'Authorization': process.env.REACT_APP_API_KEY,
+            'Content-Security-Policy': 'upgrade-insecure-requests'
           }
         })
           .then(response => {
