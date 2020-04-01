@@ -48,8 +48,6 @@ Always cite your sources:
 
 ## Built With
 
-#### Front-end:
-
 * React
 * HTML5
 * CSS3
