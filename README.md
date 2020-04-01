@@ -1,68 +1,66 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# Portfolio
+[![CodeFactor](https://www.codefactor.io/repository/github/dannydi12/its-me-daniel/badge)](https://www.codefactor.io/repository/github/dannydi12/its-me-daniel)
 
-In the project directory, you can run:
+The deployment can be found at [https://imdan.io/](https://imdan.io/)
 
-### `yarn start`
+## Design Motivation
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+I wanted to create a portfolio site to exhibit my web development skillset while also showcasing my personality. 
+With those goals in mind, I approached the design with these three principals:
 
-The page will reload if you make edits.<br />
+* The design should be simplistic. The purpose of the website is to list skills and projects. Therefore, the design should focus on its main purpose.
+* It should still feel playful and quirky to showcase different parts of my personality. This is where I decided to implement the lavender coloring throughout.
+* It should be unique, hence the 'Scare Daniel' button at the end of the page.
+
+
+## Installation
+
+#### `npm install`
+
+Installs all the required dependencies. Run this before anything else.
+
+#### `npm start`
+
+Runs the app in the development mode  
+Open  [http://localhost:3000](http://localhost:3000/)  to view it in the browser.
+
+The page will reload if you make edits.  
 You will also see any lint errors in the console.
 
-### `yarn test`
+#### `npm test`
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Launches the test runner in the interactive watch mode.  
 
-### `yarn build`
+## Screenshots
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+I want the user to form a first impression of me that reflects my playfulness. Hopefully, a visibly terrified avatar of me will do the trick:
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+![landing page](screens/landing-page.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+After showcasing my projects, I'd like to give the users various ways of reaching out to me, including a way to randomly turn on my smart LEDs:
 
-### `yarn eject`
+![contact page](screens/contact-page.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Always cite your sources:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![attribution page](screens/attribution-page.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Built With
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+#### Front-end:
 
-## Learn More
+* React
+* HTML5
+* CSS3
+* Javascript
+* Jest
+* Deployed with Zeit
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Deployment
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- [Deployment](https://thoughtbin.imdan.io/)
 
-### Code Splitting
+## Authors
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+* **Daniel DiVenere** -  Development, Deployment, etc - [https://imdan.io/](https://imdan.io/)
