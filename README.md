@@ -7,7 +7,7 @@ The deployment can be found at [https://imdan.io/](https://imdan.io/)
 ## Design Motivation
 
 I wanted to create a portfolio site to exhibit my web development skillset while also showcasing my personality. 
-With those goals in mind, I approached the design with these three principals:
+With these goals in mind, I approached the design with these three principals:
 
 * The design should be simplistic. The purpose of the website is to list skills and projects. Therefore, the design should focus on its main purpose.
 * It should still feel playful and quirky to showcase different parts of my personality. This is where I decided to implement the lavender coloring throughout.
