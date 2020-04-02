@@ -10,6 +10,8 @@ function Landing() {
   return (
     <header
       className='landing'
+
+      // Toggle between happy and shocked expression based on user interactions
       onClick={() => setExpression({
         eyes: expression.eyes === 'Happy' ? 'Surprised' : 'Happy',
         mouth: expression.mouth === 'Smile' ? 'ScreamOpen' : 'Smile'

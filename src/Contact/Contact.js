@@ -10,10 +10,12 @@ function Contact() {
   const [danielGotScared, setDanielGotScared] = useState(false);
 
   const handleClick = () => {
+    // If it's the first time the button was clicked, send the fetch request
     if (!danielGotScared) {
       setDanielGotScared(true);
       const currentTimePST = moment().tz("America/Los_Angeles").hour();
 
+      // Make sure its between 8am and 10pm PST... I like my sleep
       if (currentTimePST >= 8 && currentTimePST <= 22) {
         fetch(process.env.REACT_APP_API_URL, {
           method: 'PUT',
