@@ -1,6 +1,7 @@
 import React from 'react';
-import './ProjectNav.css';
 import ReactGA from 'react-ga';
+import PropTypes from 'prop-types';
+import './ProjectNav.css';
 
 function ProjectNav(props) {
   const clickEvent = (title, type) => {
@@ -27,6 +28,12 @@ function ProjectNav(props) {
       </ul>
     </nav>
   );
+}
+
+ProjectNav.propTypes = {
+  categories: PropTypes.arrayOf(PropTypes.string).isRequired,
+  currentCategory: PropTypes.string.isRequired,
+  update: PropTypes.func.isRequired
 }
 
 export default ProjectNav;
