@@ -54,7 +54,6 @@ function Contact() {
           <h2>Contact</h2>
         </header>
         <TimeBasedMesage />
-        {console.log()}
         <ul>
           <li>
             <a onMouseEnter={() => hoverEvent('Github')}
