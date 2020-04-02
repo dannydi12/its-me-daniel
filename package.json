@@ -8,7 +8,6 @@
     "@testing-library/user-event": "^7.1.2",
     "avataaars": "^1.2.1",
     "dotenv": "^8.2.0",
-    "moment": "^2.24.0",
     "moment-timezone": "^0.5.28",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",

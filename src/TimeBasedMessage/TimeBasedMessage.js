@@ -1,21 +1,21 @@
 import React, { useState, useEffect } from 'react';
-import moment from 'moment';
+import moment from 'moment-timezone';
 
 function TimeBasedMesage() {
-  const [time, updateTime] = useState(moment().format('h:mma'));
+  const [time, updateTime] = useState(moment().tz("America/Los_Angeles").format('h:mma'));
 
   useEffect(() => {
-    const interval = setInterval(() => updateTime(moment().format('h:mma')), 1000);
+    const interval = setInterval(() => updateTime(moment().tz("America/Los_Angeles").format('h:mma')), 1000);
     return () => clearInterval(interval);
   }, []);
 
   const message = () => {
-    const hour = moment().hour();
-    const minute = moment().minute();
+    const hour = moment().tz("America/Los_Angeles").hour();
+    const minute = moment().tz("America/Los_Angeles").minute();
 
     switch (true) {
-      case (moment().format('h:mm') === '11:11'):
-        return (<p>It's {time}, which means I'm probably wishing for it to be 11:12{moment().format('a')}</p>);
+      case (moment().tz("America/Los_Angeles").format('h:mm') === '11:11'):
+        return (<p>It's {time}, which means I'm probably wishing for it to be 11:12{moment().tz("America/Los_Angeles").format('a')}</p>);
 
       case (hour >= 7 && hour < 9):
         return (<p>It's {time}, which means I'm probably on a hike. Let's walk and talk <span role='img' aria-label='mountain'>&#x26f0;</span></p>);
