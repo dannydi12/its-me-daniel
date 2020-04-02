@@ -1,7 +1,8 @@
 import React from 'react';
-import './ProjectCard.css';
 import LazyLoad from 'react-lazyload';
 import ReactGA from 'react-ga';
+import PropTypes from 'prop-types';
+import './ProjectCard.css';
 
 function ProjectCard(props) {
   const clickEvent = (title, type) => {
@@ -27,6 +28,18 @@ function ProjectCard(props) {
       </div>
     </div>
   );
+}
+
+ProjectCard.propTypes = {
+  project: PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    category: PropTypes.array,
+    description: PropTypes.string.isRequired,
+    image: PropTypes.string.isRequired,
+    languages: PropTypes.arrayOf(PropTypes.string).isRequired,
+    repo: PropTypes.string.isRequired,
+    live: PropTypes.string.isRequired
+  }).isRequired
 }
 
 export default ProjectCard;
