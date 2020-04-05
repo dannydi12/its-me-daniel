@@ -74,12 +74,12 @@ function Contact() {
           <li>
             <a onMouseEnter={() => hoverEvent('Email')}
               onClick={() => clickEvent('Email')}
-              href="mailto:danieldivenere@gmail.com?subject=Hey,%20let's%20talk.&body=What's%20the%20meaning%20of%20Life,%20the%20Universe,%20and%20Everything?"
+              href="mailto:hi@imdan.io?subject=Hey,%20let's%20talk.&body=What's%20the%20meaning%20of%20Life,%20the%20Universe,%20and%20Everything?"
               target='_blank'
               rel="noopener noreferrer">Email</a>
           </li>
         </ul>
-        <p>If traditional methods of communication aren't your thing, click the button and it will turn on the custom LED system I installed in my room. It's pretty jarring, and I'll just think it's the robot uprising.</p>
+        <p>If traditional methods of communication aren't your thing, click the button and it will turn on the custom LED server I installed in my room. It's pretty jarring, and I'll just think it's the robot uprising.</p>
         <button onClick={() => {
           clickEvent('\'Scare Daniel\'')
           handleClick()

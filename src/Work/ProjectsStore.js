@@ -22,7 +22,7 @@ const STORE = [
     category: ['Featured'],
     description: 'A frictionless micro-platform that allows users to anonymously share and create content. Eliminates emphasis on followers, likes, or reputation.',
     image: '/images/thoughtbin.png',
-    languages: ['React', 'Node', 'PostgreSQL', 'Express', 'WebSockets', 'Mocha/Chai',],
+    languages: ['React', 'Node', 'PostgreSQL', 'Express', 'WebSockets', 'AJAX', 'Mocha', 'Chai'],
     repo: 'https://github.com/dannydi12/thoughtbin-client',
     live: 'https://thoughtbin.imdan.io'
   },
@@ -31,14 +31,14 @@ const STORE = [
     category: ['Featured'],
     description: 'A turn-key solution for setting up remotely-controlled WS281x LEDs on a Raspberry Pi with Express. Also includes a React front end for ease of use.',
     image: '/images/led.png',
-    languages: ['Python', 'Node', 'Express', 'React', 'HTML', 'CSS', 'Javascript', 'Mocha', 'Chai', 'Jest'],
+    languages: ['Python', 'Node', 'Express', 'React', 'HTML', 'CSS', 'Javascript', 'AJAX', 'Mocha', 'Chai', 'Jest'],
     repo: 'https://github.com/dannydi12/pi-led-server',
-    live: ''
+    live: 'https://github.com/dannydi12/pi-led-client#screenshots'
   },
   {
     title: 'Chocolate Milk Media',
     category: ['Featured'],
-    description: 'A freelance project for a film production company called Chocolate Milk Media.',
+    description: 'A freelance project for a film production company. A great case study involving web design and how to be unique on the internet.',
     image: '/images/cmm.png',
     languages: ['HTML', 'CSS', 'Javascript', 'jQuery'],
     repo: 'https://github.com/dannydi12/chocolate-milk-media',
