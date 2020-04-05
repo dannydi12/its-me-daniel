@@ -9,8 +9,8 @@ const project = {
   image: '/images/tunezilla.png',
   languages: ['HTML', 'CSS', 'Javascript', 'jQuery', 'AJAX'],
   repo: 'https://github.com/dannydi12/tunezilla/',
-  live: 'https://dannydi12.github.io/tunezilla/'
-}
+  live: 'https://dannydi12.github.io/tunezilla/',
+};
 
 it('renders without crashing', () => {
   const div = document.createElement('div');

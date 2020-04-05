@@ -11,20 +11,21 @@ beforeAll(() => {
   const div = document.createElement('div');
   window.domNode = div;
   document.body.appendChild(div);
-})
+});
 
 it('renders without crashing', () => {
   const mockLocation = {
     pathname: '/attribution',
     hash: '',
     search: '',
-    state: ''
-  }
+    state: '',
+  };
 
-  jest.spyOn(routeData, 'useRouteMatch').mockReturnValue(mockLocation)
+  jest.spyOn(routeData, 'useRouteMatch').mockReturnValue(mockLocation);
 
-  const wrapper = shallow(
+  shallow(
     <Router>
       <ScrollToTop />
-    </Router>, { attachTo: window.domNode });
+    </Router>, { attachTo: window.domNode },
+  );
 });

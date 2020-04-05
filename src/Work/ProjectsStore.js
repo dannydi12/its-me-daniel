@@ -6,7 +6,7 @@ const STORE = [
     image: '/images/tunezilla.png',
     languages: ['HTML', 'CSS', 'Javascript', 'jQuery', 'AJAX'],
     repo: 'https://github.com/dannydi12/tunezilla/',
-    live: 'https://dannydi12.github.io/tunezilla/'
+    live: 'https://dannydi12.github.io/tunezilla/',
   },
   {
     title: 'Mocking Text Generator',
@@ -15,7 +15,7 @@ const STORE = [
     image: '/images/meme-generator.png',
     languages: ['HTML', 'CSS', 'Javascript', 'jQuery'],
     repo: 'https://github.com/dannydi12/mocking-text-generator',
-    live: 'https://dannydi12.github.io/mocking-text-generator/'
+    live: 'https://dannydi12.github.io/mocking-text-generator/',
   },
   {
     title: 'ThoughtBin',
@@ -24,7 +24,7 @@ const STORE = [
     image: '/images/thoughtbin.png',
     languages: ['React', 'Node', 'PostgreSQL', 'Express', 'WebSockets', 'AJAX', 'Mocha', 'Chai'],
     repo: 'https://github.com/dannydi12/thoughtbin-client',
-    live: 'https://thoughtbin.imdan.io'
+    live: 'https://thoughtbin.imdan.io',
   },
   {
     title: 'Pi LED API',
@@ -33,7 +33,7 @@ const STORE = [
     image: '/images/led.png',
     languages: ['Python', 'Node', 'Express', 'React', 'HTML', 'CSS', 'Javascript', 'AJAX', 'Mocha', 'Chai', 'Jest'],
     repo: 'https://github.com/dannydi12/pi-led-server',
-    live: 'https://github.com/dannydi12/pi-led-client#screenshots'
+    live: 'https://github.com/dannydi12/pi-led-client#screenshots',
   },
   {
     title: 'Chocolate Milk Media',
@@ -42,7 +42,7 @@ const STORE = [
     image: '/images/cmm.png',
     languages: ['HTML', 'CSS', 'Javascript', 'jQuery'],
     repo: 'https://github.com/dannydi12/chocolate-milk-media',
-    live: 'https://chocolatemilkmedia.com'
+    live: 'https://chocolatemilkmedia.com',
   },
   {
     title: 'My Portfolio',
@@ -51,8 +51,8 @@ const STORE = [
     image: '/images/portfolio.png',
     languages: ['React', 'HTML', 'CSS', 'Javascript', 'Mocha', 'Chai'],
     repo: 'https://github.com/dannydi12/its-me-daniel',
-    live: 'https://imdan.io'
+    live: 'https://imdan.io',
   },
-]
+];
 
 export default STORE;
