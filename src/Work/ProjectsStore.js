@@ -27,6 +27,15 @@ const STORE = [
     live: 'https://thoughtbin.imdan.io'
   },
   {
+    title: 'Pi LED API',
+    category: ['Featured'],
+    description: 'A turn-key solution for setting up remotely-controlled WS281x LEDs on a Raspberry Pi with Express. Also includes a React front end for ease of use.',
+    image: '/images/led.png',
+    languages: ['Python', 'Node', 'Express', 'React', 'HTML', 'CSS', 'Javascript', 'Mocha', 'Chai', 'Jest'],
+    repo: 'https://github.com/dannydi12/pi-led-server',
+    live: ''
+  },
+  {
     title: 'Chocolate Milk Media',
     category: ['Featured'],
     description: 'A freelance project for a film production company called Chocolate Milk Media.',
@@ -43,7 +52,7 @@ const STORE = [
     languages: ['React', 'HTML', 'CSS', 'Javascript', 'Mocha', 'Chai'],
     repo: 'https://github.com/dannydi12/its-me-daniel',
     live: 'https://imdan.io'
-  }
+  },
 ]
 
 export default STORE;
