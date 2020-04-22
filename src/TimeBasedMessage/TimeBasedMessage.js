@@ -18,6 +18,7 @@ function TimeBasedMesage() {
         return (
           <p>
             It's
+            {' '}
             {time}
             {' '}
             PST, which means I'm probably wishing for it to be 11:12
@@ -29,6 +30,7 @@ function TimeBasedMesage() {
         return (
           <p>
             It's
+            {' '}
             {time}
             {' '}
             PST, which means I'm probably on a hike. Let's walk and talk
@@ -40,6 +42,7 @@ function TimeBasedMesage() {
         return (
           <p>
             It's
+            {' '}
             {time}
             {' '}
             PST, which means I'm probably designing a website right now.
@@ -54,6 +57,7 @@ function TimeBasedMesage() {
         return (
           <p>
             It's
+            {' '}
             {time}
             {' '}
             PST, which means I'm probably thinking about
@@ -66,6 +70,7 @@ function TimeBasedMesage() {
         return (
           <p>
             It's
+            {' '}
             {time}
             {' '}
             PST, which means I'm probably making music.
@@ -78,6 +83,7 @@ function TimeBasedMesage() {
         return (
           <p>
             It's
+            {' '}
             {time}
             {' '}
             PST, which means I'm probably watching Rick and Morty.
@@ -90,6 +96,7 @@ function TimeBasedMesage() {
         return (
           <p>
             It's
+            {' '}
             {time}
             {' '}
             PST, which means I'm probably dreaming about Elon Musk. Is that you Elon?
@@ -101,6 +108,7 @@ function TimeBasedMesage() {
         return (
           <p>
             It's
+            {' '}
             {time}
             {' '}
             PST, which means I'm probably designing a website right now.
