@@ -10,7 +10,9 @@ function About() {
         <h2 className="title">I'm a web developer.</h2>
         <p>
           I spend my time building new websites and tools
-          while simultaneously willing quirky side-projects into existence.
+          while simultaneously willing quirky side-projects into existence. Web Development allows me 
+          to creatively express myself and help the world in my own way. I enjoy collaborating on 
+          teams to help make incredible websites for everyone to enjoy.
           I also have an unhealthy obsession with Elon Musk, I tend to impulsively learn new things
           for no apparent reason, and I think Indie music is pretty cool.
         </p>
