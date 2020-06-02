@@ -51,7 +51,7 @@ Always cite your sources:
 * React
 * HTML5
 * CSS3
-* Javascript
+* JavaScript
 * Jest
 * Deployed with Zeit
 

@@ -7,7 +7,7 @@ const project = {
   category: ['Featured'],
   description: 'A simplistic lyric-fetching web app that optionally provides background and historical information about your favorite songs.',
   image: '/images/tunezilla.png',
-  languages: ['HTML', 'CSS', 'Javascript', 'jQuery', 'AJAX'],
+  languages: ['HTML', 'CSS', 'JavaScript', 'jQuery', 'AJAX'],
   repo: 'https://github.com/dannydi12/tunezilla/',
   live: 'https://dannydi12.github.io/tunezilla/',
 };

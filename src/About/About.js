@@ -26,7 +26,7 @@ function About() {
   "things I speak": [
     "HTML5",
     "CSS3",
-    "Javascript",
+    "JavaScript",
     "jQuery",
     "React",
     "Git",
