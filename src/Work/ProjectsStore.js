@@ -2,7 +2,7 @@ const STORE = [
   {
     title: 'Pi LED API',
     category: ['Other'],
-    description: 'A turn-key solution for setting up remotely-controlled WS281x LEDs on a Raspberry Pi with Express. Also includes a React front end for ease of use.',
+    description: 'Normal LEDs are boring, so I built a turn-key solution for setting up remotely-controlled WS281x LEDs on a Raspberry Pi with Express for any hobbyist to utilize. Also includes a React front end for ease of use.',
     image: '/images/led.png',
     languages: ['Python', 'Node', 'Express', 'React', 'HTML', 'CSS', 'JavaScript', 'AJAX', 'Mocha', 'Chai', 'Jest'],
     repo: 'https://github.com/dannydi12/pi-led-server',
@@ -11,7 +11,7 @@ const STORE = [
   {
     title: 'Tunezilla',
     category: ['Other'],
-    description: 'A simplistic lyric-fetching web app that optionally provides background and historical information about your favorite songs.',
+    description: 'Most lyric services have too many ads and irrelevant information. To solve this issue, I built a simplistic lyric-fetching web app that optionally provides background and historical information about your favorite songs for singers to easily get what they need.',
     image: '/images/tunezilla.png',
     languages: ['HTML', 'CSS', 'JavaScript', 'jQuery', 'AJAX'],
     repo: 'https://github.com/dannydi12/tunezilla/',
@@ -20,7 +20,7 @@ const STORE = [
   {
     title: 'Mocking Text Generator',
     category: ['Other'],
-    description: 'A satirical web app to generate randomly capitalized text based on user input. Not to be used for psychological warfare.',
+    description: 'Typing, \'hElLo WOrLd\' takes time, why not let the robots do it for you? This is a satirical web app to generate randomly capitalized text based on the input. Not to be used for psychological warfare.',
     image: '/images/meme-generator.png',
     languages: ['HTML', 'CSS', 'JavaScript', 'jQuery'],
     repo: 'https://github.com/dannydi12/mocking-text-generator',
@@ -29,7 +29,7 @@ const STORE = [
   {
     title: 'NPMM',
     category: ['Featured'],
-    description: 'An open source project that allows developers to save their favorite packages and install them with NPMM\'s companion CLI.',
+    description: 'NPM doesn\'t let you save packages for later use. This open source project allows developers to save their favorite packages and install them with NPMM\'s companion CLI.',
     image: '/images/npmm.png',
     languages: ['React', 'Redux', 'Node', 'PostgreSQL', 'Express', 'AJAX', 'Mocha', 'Chai'],
     repo: 'https://github.com/dannydi12/npmm-client',
@@ -38,7 +38,7 @@ const STORE = [
   {
     title: 'ThoughtBin',
     category: ['Featured'],
-    description: 'A frictionless micro-platform that allows users to anonymously share and create content. Eliminates emphasis on followers, likes, or reputation.',
+    description: 'There\'s a lot going on with Twitter, maybe too much. This frictionless micro-platform allows people to anonymously share and create content. Eliminates emphasis on followers, likes, or reputation.',
     image: '/images/thoughtbin.png',
     languages: ['React', 'Node', 'PostgreSQL', 'Express', 'WebSockets', 'AJAX', 'Mocha', 'Chai'],
     repo: 'https://github.com/dannydi12/thoughtbin-client',
@@ -47,7 +47,7 @@ const STORE = [
   {
     title: 'Chocolate Milk Media',
     category: ['Featured'],
-    description: 'A freelance project for a film production company. A great case study involving web design and how to be unique on the internet.',
+    description: 'A freelance project for a film production company to gain leads. A great case study involving web design and how to be unique on the internet.',
     image: '/images/cmm.png',
     languages: ['HTML', 'CSS', 'JavaScript', 'jQuery'],
     repo: 'https://github.com/dannydi12/chocolate-milk-media',
