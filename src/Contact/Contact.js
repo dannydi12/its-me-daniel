@@ -15,6 +15,13 @@ function Contact() {
       setDanielGotScared(true);
       const currentTimePST = moment().tz('America/Los_Angeles').hour();
 
+      // Notify me on my phone through IFTTT in case I'm not home
+      fetch('https://maker.ifttt.com/trigger/scare_daniel/with/key/clUSpcWoAOP3U6Dv-WatQS_rwJiOdf7uaH3Rv1bAWeG', {
+        method: 'POST',
+        mode: 'no-cors',
+      })
+        .catch((err) => console.log(err));
+
       // Make sure its between 8am and 10pm PST... I like my sleep
       if (currentTimePST >= 8 && currentTimePST <= 22) {
         fetch(process.env.REACT_APP_API_URL, {
