@@ -23,15 +23,16 @@ function About() {
           <Highlight className="json">
             {`{
   "things I speak": [
-    "HTML5",
-    "CSS3",
-    "JavaScript",
-    "jQuery",
     "React",
-    "Git",
-    "AJAX",
+    "JavaScript",
+    "TypeScript",
+    "GraphQL"
+    "HTML",
+    "CSS",
+    "Firebase",
     "Node",
-    "Postgres",
+    "PostgreSQL",
+    "MongoDB"
     `}
             &quot;
             <span className="blinking-cursor">|</span>
