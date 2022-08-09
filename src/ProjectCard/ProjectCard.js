@@ -30,7 +30,7 @@ function ProjectCard(props) {
         </p>
         <div className="project-links">
           <a onClick={() => clickEvent(props.project.title, 'Live')} target="_blank" rel="noopener noreferrer" href={props.project.live}>Live</a>
-          <a onClick={() => clickEvent(props.project.title, 'Repo')} target="_blank" rel="noopener noreferrer" href={props.project.repo}>Repo</a>
+          {props.project.repo && <a onClick={() => clickEvent(props.project.title, 'Repo')} target="_blank" rel="noopener noreferrer" href={props.project.repo}>Repo</a>}
         </div>
       </div>
     </div>
