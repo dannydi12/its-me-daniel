@@ -40,11 +40,12 @@ function ProjectCard(props) {
 ProjectCard.propTypes = {
   project: PropTypes.shape({
     title: PropTypes.string.isRequired,
+    // eslint-disable-next-line react/forbid-prop-types
     category: PropTypes.array,
     description: PropTypes.string.isRequired,
     image: PropTypes.string.isRequired,
     languages: PropTypes.arrayOf(PropTypes.string).isRequired,
-    repo: PropTypes.string.isRequired,
+    repo: PropTypes.string,
     live: PropTypes.string.isRequired,
   }).isRequired,
 };
