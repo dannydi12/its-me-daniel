@@ -5,7 +5,7 @@ export default css`
     font-size: 1em;
     background-color: #a29bfe;
     min-height: 100vh;
-    width: 100vw;
+    width: 100%;
     color: #fff;
     padding-top: 50px;
   }

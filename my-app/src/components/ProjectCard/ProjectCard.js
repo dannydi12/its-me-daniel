@@ -42,14 +42,16 @@ function ProjectCard(props) {
             >
               Live
             </a>
-            <a
-              onClick={() => clickEvent(props.project.title, "Repo")}
-              target="_blank"
-              rel="noopener noreferrer"
-              href={props.project.repo}
-            >
-              Repo
-            </a>
+            {props.project.repo && (
+              <a
+                onClick={() => clickEvent(props.project.title, "Repo")}
+                target="_blank"
+                rel="noopener noreferrer"
+                href={props.project.repo}
+              >
+                Repo
+              </a>
+            )}
           </div>
         </div>
       </div>
@@ -65,7 +67,8 @@ ProjectCard.propTypes = {
     description: PropTypes.string.isRequired,
     image: PropTypes.string.isRequired,
     languages: PropTypes.arrayOf(PropTypes.string).isRequired,
-    repo: PropTypes.string.isRequired,
+    // eslint-disable-next-line react/forbid-prop-types
+    repo: PropTypes.string,
     live: PropTypes.string.isRequired,
   }).isRequired,
 };

@@ -23,24 +23,24 @@ function Contact() {
         .catch((err) => console.log(err));
 
       // Make sure its between 8am and 10pm PST... I like my sleep
-      if (currentTimePST >= 8 && currentTimePST <= 22) {
-        fetch(process.env.REACT_APP_API_URL, {
-          method: 'PUT',
-          mode: 'cors',
-          headers: {
-            Authorization: process.env.REACT_APP_API_KEY,
-            'Content-Security-Policy': 'upgrade-insecure-requests',
-          },
-        })
-          .then((response) => {
-            if (!response.ok) {
-              throw new Error(response);
-            }
-          })
-          .catch((err) => {
-            console.log(err);
-          });
-      }
+      // if (currentTimePST >= 8 && currentTimePST <= 22) {
+      //   fetch(process.env.REACT_APP_API_URL, {
+      //     method: 'PUT',
+      //     mode: 'cors',
+      //     headers: {
+      //       Authorization: process.env.REACT_APP_API_KEY,
+      //       'Content-Security-Policy': 'upgrade-insecure-requests',
+      //     },
+      //   })
+      //     .then((response) => {
+      //       if (!response.ok) {
+      //         throw new Error(response);
+      //       }
+      //     })
+      //     .catch((err) => {
+      //       console.log(err);
+      //     });
+      // }
     }
   };
 

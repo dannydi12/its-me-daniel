@@ -30,7 +30,7 @@ function ProjectCard(props) {
         </p>
         <div className="project-links">
           <a onClick={() => clickEvent(props.project.title, 'Live')} target="_blank" rel="noopener noreferrer" href={props.project.live}>Live</a>
-          <a onClick={() => clickEvent(props.project.title, 'Repo')} target="_blank" rel="noopener noreferrer" href={props.project.repo}>Repo</a>
+          {props.project.repo && <a onClick={() => clickEvent(props.project.title, 'Repo')} target="_blank" rel="noopener noreferrer" href={props.project.repo}>Repo</a>}
         </div>
       </div>
     </div>
@@ -40,11 +40,12 @@ function ProjectCard(props) {
 ProjectCard.propTypes = {
   project: PropTypes.shape({
     title: PropTypes.string.isRequired,
+    // eslint-disable-next-line react/forbid-prop-types
     category: PropTypes.array,
     description: PropTypes.string.isRequired,
     image: PropTypes.string.isRequired,
     languages: PropTypes.arrayOf(PropTypes.string).isRequired,
-    repo: PropTypes.string.isRequired,
+    repo: PropTypes.string,
     live: PropTypes.string.isRequired,
   }).isRequired,
 };
