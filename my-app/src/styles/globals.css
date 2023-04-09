@@ -1,4 +1,4 @@
-@use "normalize.css";
+@import "node_modules/modern-normalize/modern-normalize.css";
 
 body {
   margin: 0;

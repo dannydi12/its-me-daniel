@@ -1,4 +1,4 @@
-import "@/styles/globals.scss";
+import "@/styles/globals.css";
 import "@/styles/tomorrow-night-bright.css";
 import type { AppProps } from "next/app";
 
