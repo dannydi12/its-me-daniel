@@ -1,16 +1,15 @@
 import React from "react";
-// import LazyLoad from 'react-lazyload';
-// import ReactGA from 'react-ga';
+import ReactGA from "react-ga";
 import PropTypes from "prop-types";
 import styles from "./ProjectCard.styled";
 import Image from "next/image";
 
 function ProjectCard(props) {
   const clickEvent = (title, type) => {
-    // ReactGA.event({
-    //   category: 'User',
-    //   action: `Clicked ${type} link for ${title}`,
-    // });
+    ReactGA.event({
+      category: "User",
+      action: `Clicked ${type} link for ${title}`,
+    });
   };
 
   return (

@@ -1,14 +1,14 @@
 import React from "react";
-// import ReactGA from 'react-ga';
+import ReactGA from "react-ga";
 import PropTypes from "prop-types";
 import styles from "./ProjectNav.styled";
 
 function ProjectNav(props) {
   const clickEvent = (title, type) => {
-    // ReactGA.event({
-    //   category: 'User',
-    //   action: `Clicked ${type} link in ${title}`,
-    // });
+    ReactGA.event({
+      category: "User",
+      action: `Clicked ${type} link in ${title}`,
+    });
   };
 
   return (

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { DateTime } from "luxon";
-// import ReactGA from "react-ga";
+import ReactGA from "react-ga";
 import styles from "./Contact.styled";
 import TimeBasedMesage from "../TimeBasedMessage/TimeBasedMessage";
 
@@ -45,16 +45,16 @@ function Contact() {
   };
 
   const clickEvent = (type) => {
-    // ReactGA.event({
-    //   category: "User",
-    //   action: `Clicked ${type} link`,
-    // });
+    ReactGA.event({
+      category: "User",
+      action: `Clicked ${type} link`,
+    });
   };
   const hoverEvent = (type) => {
-    // ReactGA.event({
-    //   category: "User",
-    //   action: `Hovered on ${type} link`,
-    // });
+    ReactGA.event({
+      category: "User",
+      action: `Hovered on ${type} link`,
+    });
   };
   return (
     <>
