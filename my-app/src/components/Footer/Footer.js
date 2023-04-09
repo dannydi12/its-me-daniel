@@ -1,12 +1,14 @@
 import React from "react";
 import styles from "./Footer.styled";
-// import { Link } from 'react-router-dom';
+import Link from "next/link";
 
 function Footer() {
   return (
     <>
       <footer className="footer">
-        {/* <p><Link to="/attribution">Attribution</Link></p> */}
+        <Link href="/attribution">
+          <p className="link">Attribution</p>
+        </Link>
         <p>
           Powered by
           <span role="img" aria-label="ice cream">

@@ -10,8 +10,10 @@ export default css`
     font-size: 0.8em;
   }
 
-  .footer a {
+  .link {
     color: #fff;
+    text-decoration-color: #fff;
+    text-decoration-line: inherit;
   }
 
   .footer p {
