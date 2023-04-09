@@ -17,7 +17,9 @@ export default css`
 
   .project-image {
     width: 100%;
+    max-width: 355px;
     height: 185px;
+    position: relative;
   }
 
   .project-title {

@@ -11,9 +11,7 @@ function Contact() {
     // If it's the first time the button was clicked, send the fetch request
     if (!danielGotScared) {
       setDanielGotScared(true);
-      const currentTimePST = DateTime.now()
-        .setZone("America/Los_Angeles")
-        .hour();
+      const currentTimePST = DateTime.now().setZone("America/Los_Angeles").hour;
 
       // Notify me on my phone through IFTTT in case I'm not home
       fetch(
