@@ -1,6 +1,13 @@
 import { Html, Head, Main, NextScript } from "next/document";
+import { useEffect } from "react";
+import ReactGA from "react-ga";
 
 export default function Document() {
+  useEffect(() => {
+    ReactGA.initialize("UA-157458767-1");
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
+
   return (
     <Html lang="en">
       <Head>
