@@ -66,16 +66,6 @@ export default function Document() {
           sizes="16x16"
           href="/favicons/favicon-16x16.png"
         />
-
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com/"
-          crossOrigin=""
-        />
-        <link
-          href="https://fonts.googleapis.com/css?family=Poppins"
-          rel="stylesheet"
-        ></link>
       </Head>
       <body>
         <Main />
