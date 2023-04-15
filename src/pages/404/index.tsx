@@ -1,8 +1,8 @@
-import React from "react";
+import React, { FC } from "react";
 import Link from "next/link";
 import css from "styled-jsx/css";
 
-function NotFound() {
+const NotFound: FC = () => {
   return (
     <>
       <main className="not-found">
@@ -17,7 +17,7 @@ function NotFound() {
       <style jsx>{styles}</style>
     </>
   );
-}
+};
 
 const styles = css`
   .not-found {

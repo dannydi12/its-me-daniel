@@ -2,10 +2,11 @@ import "@/styles/globals.css";
 import "@/styles/tomorrow-night-bright.css";
 import type { AppProps } from "next/app";
 import { Inter } from "next/font/google";
+import { FC } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function App({ Component, pageProps }: AppProps) {
+const App: FC<AppProps> = ({ Component, pageProps }) => {
   return (
     <>
       <style jsx global>{`
@@ -16,4 +17,6 @@ export default function App({ Component, pageProps }: AppProps) {
       <Component {...pageProps} />
     </>
   );
-}
+};
+
+export default App;

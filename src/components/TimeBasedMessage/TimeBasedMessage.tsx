@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, FC } from "react";
 import { DateTime } from "luxon";
 
-function TimeBasedMesage() {
+const TimeBasedMesage: FC = () => {
   const [time, updateTime] = useState(
     DateTime.now().setZone("America/Los_Angeles").toFormat("h:mma")
   );
@@ -113,6 +113,6 @@ function TimeBasedMesage() {
   };
 
   return <>{message()}</>;
-}
+};
 
 export default TimeBasedMesage;

@@ -1,9 +1,8 @@
-/* eslint-disable no-trailing-spaces */
-import React from "react";
+import React, { FC } from "react";
 import styles from "./About.styled";
 import Highlight from "react-highlight";
 
-function About() {
+const About: FC = () => {
   return (
     <>
       <section className="about-section">
@@ -52,6 +51,6 @@ function About() {
       <style jsx>{styles}</style>
     </>
   );
-}
+};
 
 export default About;

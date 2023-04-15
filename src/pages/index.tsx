@@ -3,8 +3,9 @@ import About from "../components/About/About";
 import Work from "../components/Work/Work";
 import Contact from "../components/Contact/Contact";
 import Footer from "../components/Footer/Footer";
+import { FC } from "react";
 
-export default function Home() {
+const Home: FC = () => {
   return (
     <main>
       <Landing />
@@ -14,4 +15,6 @@ export default function Home() {
       <Footer />
     </main>
   );
-}
+};
+
+export default Home;

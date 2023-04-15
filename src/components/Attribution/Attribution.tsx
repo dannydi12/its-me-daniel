@@ -1,8 +1,8 @@
-import React from "react";
+import React, { FC } from "react";
+import styles from "./Attribution.styled.jsx";
 import Link from "next/link";
-import css from "styled-jsx/css";
 
-function Attribution() {
+const Attribution: FC = () => {
   return (
     <>
       <main className="attribution">
@@ -58,61 +58,14 @@ function Attribution() {
               </a>
             </li>
           </ul>
-          <Link href="/">
-            <p className="back">Back</p>
+          <Link className="back" href="/">
+            Back
           </Link>
         </div>
       </main>
       <style jsx>{styles}</style>
     </>
   );
-}
-
-const styles = css`
-  .attribution {
-    font-size: 1em;
-    background-color: #a29bfe;
-    min-height: 100vh;
-    width: 100%;
-    color: #fff;
-    padding-top: 50px;
-  }
-
-  .attribution a {
-    color: #fff;
-  }
-
-  .attribution blockquote {
-    font-size: 1em;
-    border-left: 0.3em solid #fff;
-    margin-left: 0;
-    padding: 1em;
-    width: 100%;
-  }
-
-  .attribution-container {
-    max-width: 80%;
-    margin: 0 auto;
-  }
-
-  .back {
-    text-align: center;
-    display: block;
-    margin: 0 auto;
-    margin-top: 2em;
-    color: #fff;
-    text-decoration-color: #fff;
-    text-decoration-line: inherit;
-  }
-
-  @media only screen and (min-width: 1000px) {
-    .attribution {
-      font-size: 3em;
-    }
-    .attribution blockquote {
-      font-size: 0.6em;
-    }
-  }
-`;
+};
 
 export default Attribution;

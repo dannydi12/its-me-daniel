@@ -1,9 +1,9 @@
-import React, { useState } from "react";
-import ReactGA from "react-ga";
+import React, { FC, useState } from "react";
 import styles from "./Contact.styled";
 import TimeBasedMesage from "../TimeBasedMessage/TimeBasedMessage";
+import { clickEvent, hoverEvent } from "@/utils/tracking";
 
-function Contact() {
+const Contact: FC = () => {
   const [danielGotScared, setDanielGotScared] = useState(false);
 
   const handleClick = async () => {
@@ -14,18 +14,6 @@ function Contact() {
     }
   };
 
-  const clickEvent = (type) => {
-    ReactGA.event({
-      category: "User",
-      action: `Clicked ${type} link`,
-    });
-  };
-  const hoverEvent = (type) => {
-    ReactGA.event({
-      category: "User",
-      action: `Hovered on ${type} link`,
-    });
-  };
   return (
     <>
       <section className="contact-section">
@@ -89,6 +77,6 @@ function Contact() {
       <style jsx>{styles}</style>
     </>
   );
-}
+};
 
 export default Contact;

@@ -1,17 +1,26 @@
-import React, { useState } from "react";
+import React, { FC, useState } from "react";
 import styles from "./Work.styled";
 import ProjectCard from "../ProjectCard/ProjectCard";
 import ProjectNav from "../ProjectNav/ProjectNav";
 import STORE from "./ProjectsStore";
 
-function Work() {
+const Work: FC = () => {
   const [categoryState, setCategoryState] = useState("Featured");
 
   const allProjects = STORE.filter((project) =>
     project.category.find((category) => category === categoryState)
   );
-  const filteredProjects = allProjects.map((project, i) => (
-    <ProjectCard key={i} project={project} />
+
+  const filteredProjects = allProjects.map((project) => (
+    <ProjectCard
+      key={project.title}
+      title={project.title}
+      description={project.description}
+      image={project.image}
+      languages={project.languages}
+      live={project.live}
+      repo={project.repo}
+    />
   ));
 
   return (
@@ -32,6 +41,6 @@ function Work() {
       <style jsx>{styles}</style>
     </>
   );
-}
+};
 
 export default Work;

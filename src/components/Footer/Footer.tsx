@@ -1,8 +1,8 @@
-import React from "react";
+import React, { FC } from "react";
 import styles from "./Footer.styled";
 import Link from "next/link";
 
-function Footer() {
+const Footer: FC = () => {
   return (
     <>
       <footer className="footer">
@@ -19,6 +19,6 @@ function Footer() {
       <style jsx>{styles}</style>
     </>
   );
-}
+};
 
 export default Footer;
