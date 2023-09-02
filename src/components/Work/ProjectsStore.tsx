@@ -130,7 +130,7 @@ const STORE = [
     image: "/images/portfolio.png",
     languages: ["React", "HTML", "CSS", "JavaScript", "Mocha", "Chai"],
     repo: "https://github.com/dannydi12/its-me-daniel",
-    live: "https://danthebuilder.com.io",
+    live: "https://danthebuilder.com",
   },
 ];
 
