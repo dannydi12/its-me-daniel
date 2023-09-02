@@ -39,13 +39,12 @@ const Document: FC = () => {
         <meta name="twitter:image:src" content="/favicons/shock.png" />
         <meta property="og:title" content="Daniel DiVenere - Portfolio" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="imdan.io" />
+        <meta property="og:url" content="danthebuilder.com" />
         <meta property="og:image" content="/favicons/shock.png" />
         <meta
           property="og:description"
           content="Hi. It's me. Daniel. I'm a full stack web developer and I'm here to help out on your next project."
         />
-        danthebuilder.com
         <meta property="og:site_name" content="Daniel DiVenere - Portfolio" />
         <link
           rel="apple-touch-icon"
