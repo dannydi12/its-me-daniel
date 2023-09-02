@@ -22,17 +22,14 @@ const Document: FC = () => {
           name="keywords"
           content="junior web developer, web developer, full stack developer, react developer"
         />
-
         <meta name="theme-color" content="#a29bfe" />
         <link rel="manifest" href="/manifest.json" />
-
         <meta property="name" content="Daniel DiVenere - Portfolio" />
         <meta
           property="description"
           content="Hi. It's me. Daniel. I'm a full stack web developer and I'm here to help out on your next project."
         />
         <meta property="image" content="/favicons/shock.png" />
-
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:title" content="Daniel DiVenere - Portfolio" />
         <meta
@@ -40,7 +37,6 @@ const Document: FC = () => {
           content="Hi. It's me. Daniel. I'm a full stack web developer and I'm here to help out on your next project."
         />
         <meta name="twitter:image:src" content="/favicons/shock.png" />
-
         <meta property="og:title" content="Daniel DiVenere - Portfolio" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="imdan.io" />
@@ -49,8 +45,8 @@ const Document: FC = () => {
           property="og:description"
           content="Hi. It's me. Daniel. I'm a full stack web developer and I'm here to help out on your next project."
         />
+        danthebuilder.com
         <meta property="og:site_name" content="Daniel DiVenere - Portfolio" />
-
         <link
           rel="apple-touch-icon"
           sizes="180x180"

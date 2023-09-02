@@ -111,7 +111,7 @@ const STORE = [
       "Chai",
     ],
     repo: "https://github.com/dannydi12/thoughtbin-client",
-    live: "https://thoughtbin.imdan.io",
+    live: "https://thoughtbin.danthebuilder.com.io",
   },
   {
     title: "Chocolate Milk Media",
@@ -130,7 +130,7 @@ const STORE = [
     image: "/images/portfolio.png",
     languages: ["React", "HTML", "CSS", "JavaScript", "Mocha", "Chai"],
     repo: "https://github.com/dannydi12/its-me-daniel",
-    live: "https://imdan.io",
+    live: "https://danthebuilder.com.io",
   },
 ];
 
