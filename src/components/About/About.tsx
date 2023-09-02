@@ -7,13 +7,12 @@ const About: FC = () => {
     <>
       <section className="about-section">
         <div className="section-wrapper">
-          <h2 className="title">I'm a web developer.</h2>
+          <h2 className="title">I'm a builder.</h2>
           <p>
-            I spend my time building new websites and tools while simultaneously
-            willing quirky side-projects into existence. I also have an
-            unhealthy obsession with Elon Musk, I tend to impulsively learn new
-            things for no apparent reason, and I think Indie music is pretty
-            cool.
+            I spend my time developing new websites and products while
+            simultaneously willing quirky side-projects into existence. I tend
+            to impulsively learn new things for no apparent reason, take really
+            long walks in nature, and I think Indie music is pretty cool.
           </p>
           <p className="underline">
             <br />
