@@ -2,7 +2,7 @@
 # Portfolio
 [![CodeFactor](https://www.codefactor.io/repository/github/dannydi12/its-me-daniel/badge)](https://www.codefactor.io/repository/github/dannydi12/its-me-daniel)
 
-The deployment can be found at [https://imdan.io/](https://imdan.io/)
+The deployment can be found at [https://danthebuilder.com/](https://danthebuilder.com/)
 
 ## Design Motivation
 
@@ -57,8 +57,8 @@ Always cite your sources:
 
 ## Deployment
 
-- [Deployment](https://thoughtbin.imdan.io/)
+- [Deployment](https://thoughtbin.danthebuilder.com/)
 
 ## Authors
 
-* **Daniel DiVenere** -  Development, Deployment, etc - [https://imdan.io/](https://imdan.io/)
+* **Daniel DiVenere** -  Development, Deployment, etc - [https://danthebuilder.com/](https://danthebuilder.com/)
