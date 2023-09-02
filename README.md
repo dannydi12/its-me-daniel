@@ -57,7 +57,7 @@ Always cite your sources:
 
 ## Deployment
 
-- [Deployment](https://thoughtbin.danthebuilder.com/)
+- [Deployment](https://danthebuilder.com/)
 
 ## Authors
 
