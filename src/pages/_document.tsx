@@ -1,16 +1,22 @@
 import { Html, Head, Main, NextScript } from "next/document";
+import Script from "next/script";
 import { FC, useEffect } from "react";
-import ReactGA from "react-ga";
 
 const Document: FC = () => {
-  useEffect(() => {
-    ReactGA.initialize("G-R4K0KLG5D3");
-    ReactGA.pageview(window.location.pathname + window.location.search);
-  }, []);
-
   return (
     <Html lang="en">
       <Head>
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-QLGVG137CN" />
+        <Script id="google-analytics">
+          {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+ 
+          gtag('config', 'G-QLGVG137CN');
+        `}
+        </Script>
+
         <title>Daniel DiVenere | Portfolio</title>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
