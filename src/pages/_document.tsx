@@ -1,11 +1,25 @@
 import { Html, Head, Main, NextScript } from "next/document";
-import Script from "next/script";
 import { FC, useEffect } from "react";
 
 const Document: FC = () => {
   return (
     <Html lang="en">
       <Head>
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-QLGVG137CN"
+        ></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-QLGVG137CN');`,
+          }}
+        ></script>
+
         <title>Daniel DiVenere | Portfolio</title>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -60,16 +74,6 @@ const Document: FC = () => {
         />
       </Head>
       <body>
-        <Script src="https://www.googletagmanager.com/gtag/js?id=G-QLGVG137CN" />
-        <Script id="google-analytics">
-          {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
- 
-          gtag('config', 'G-QLGVG137CN');
-        `}
-        </Script>
         <Main />
         <NextScript />
       </body>
