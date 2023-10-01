@@ -41,6 +41,31 @@ const STORE = [
     live: "https://dannydi12.github.io/mocking-text-generator/",
   },
   {
+    title: "Wikipedia Visualizer",
+    category: ["Featured"],
+    description:
+      'Expedite your next "Wikipedia rabbit-hole" by using this compiled database of over 300 million article relationships to interactively explore and traverse all of humanity\'s knowledge.',
+    image: "/images/wikigraph.png",
+    languages: [
+      "React",
+      "Canvas",
+      "Typescript",
+      "Express",
+      "SQLite",
+      "ETL Pipelines",
+    ],
+    live: "https://wiki.danthebuilder.com/",
+  },
+  {
+    title: "Lahaina Watch",
+    category: ["Featured"],
+    description:
+      "Single-night hackathon project to track property sales and aquisitions in Lahaina after the Maui fires. Twitter post went viral with 500k impressions and news coverage.",
+    image: "/images/landgrab.png",
+    languages: ["React", "Typescript", "MapBox"],
+    live: "https://landgrabwatch.com/",
+  },
+  {
     title: "Emotional Support Bot",
     category: ["Featured"],
     description:
@@ -58,23 +83,24 @@ const STORE = [
     ],
     live: "https://emotionalsupportbot.com",
   },
-  {
-    title: "Crosswalk App",
-    category: ["Featured"],
-    description:
-      "Your gateway into the unseen world around you. Drop & discover hidden messages wherever you find yourself.",
-    image: "/images/crosswalk.png",
-    languages: [
-      "React",
-      "CapacitorJS",
-      "HTML",
-      "CSS",
-      "Typescript",
-      "Node",
-      "MongoDB",
-    ],
-    live: "https://www.crosswalkapp.com/",
-  },
+
+  // {
+  //   title: "Crosswalk App",
+  //   category: ["Featured"],
+  //   description:
+  //     "Your gateway into the unseen world around you. Drop & discover hidden messages wherever you find yourself.",
+  //   image: "/images/crosswalk.png",
+  //   languages: [
+  //     "React",
+  //     "CapacitorJS",
+  //     "HTML",
+  //     "CSS",
+  //     "Typescript",
+  //     "Node",
+  //     "MongoDB",
+  //   ],
+  //   live: "https://www.crosswalkapp.com/",
+  // },
   {
     title: "NPMM",
     category: ["Featured"],
