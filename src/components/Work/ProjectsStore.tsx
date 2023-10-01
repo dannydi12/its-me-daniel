@@ -60,7 +60,7 @@ const STORE = [
     title: "Lahaina Watch",
     category: ["Featured"],
     description:
-      "Single-night hackathon project to track property sales and aquisitions in Lahaina after the Maui fires. Twitter post went viral with 500k impressions and news coverage.",
+      "Single-night hackathon project to track property sales and acquisitions in Lahaina after the Maui fires. Twitter post went viral with 500k impressions and news coverage.",
     image: "/images/landgrab.png",
     languages: ["React", "Typescript", "MapBox"],
     live: "https://landgrabwatch.com/",
