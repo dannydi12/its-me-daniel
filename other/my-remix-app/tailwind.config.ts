@@ -1,16 +1,20 @@
 import type { Config } from "tailwindcss";
-import colors from "tailwindcss/colors";
 
 export default {
   content: ["./app/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    colors: {
-      ...colors,
-      primary: {
-        500: "#a29bfe",
+    extend: {
+      colors: {
+        primary: {
+          500: "#a29bfe",
+        },
       },
     },
-    extend: {},
   },
-  plugins: [],
+  plugins: [
+    require("@tailwindcss/typography"),
+    require("@tailwindcss/forms"),
+    require("@tailwindcss/aspect-ratio"),
+    require("@tailwindcss/container-queries"),
+  ],
 } satisfies Config;
