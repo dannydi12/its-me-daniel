@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/no-static-element-interactions */
 import { useState } from "react";
 
 export default function Hero() {
@@ -10,10 +9,14 @@ export default function Hero() {
         Hi, it&apos;s me. Daniel.
       </h1>
 
-      {/* eslint-disable-next-line jsx-a11y/click-events-have-key-events */}
+      {/* eslint-disable-next-line jsx-a11y/click-events-have-key-events, jsx-a11y/no-static-element-interactions */}
       <div
-        onMouseEnter={() => setInteracted(!interacted)}
-        onMouseLeave={() => setInteracted(!interacted)}
+        onMouseEnter={() =>
+          window.innerWidth > 900 && setInteracted(!interacted)
+        }
+        onMouseLeave={() =>
+          window.innerWidth > 900 && setInteracted(!interacted)
+        }
         onClick={() => setInteracted(!interacted)}
       >
         <img
