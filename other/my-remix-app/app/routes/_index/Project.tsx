@@ -1,4 +1,5 @@
 import { Link } from "@remix-run/react";
+import { clickEvent } from "./tracking";
 
 type Props = {
   title: string;
@@ -28,6 +29,7 @@ export default function Project({
             className="text-primary-500 border-[3px] p-2 text-lg w-[30%] text-center border-primary-500 hover:bg-primary-500 hover:text-white"
             rel="noreferrer"
             target="_blank"
+            onClick={() => clickEvent("Live", title)}
             to={live}
           >
             Live
@@ -37,6 +39,7 @@ export default function Project({
               className="text-primary-500 border-[3px] p-2 text-lg w-[30%] text-center border-primary-500 hover:bg-primary-500 hover:text-white"
               rel="noreferrer"
               target="_blank"
+              onClick={() => clickEvent("Repo", title)}
               to={repo}
             >
               Repo

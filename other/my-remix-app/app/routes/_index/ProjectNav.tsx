@@ -1,5 +1,6 @@
 import { Form, useSearchParams } from "@remix-run/react";
 import clsx from "clsx";
+import { clickEvent } from "./tracking";
 
 export default function ProjectNav() {
   const [searchParams] = useSearchParams();
@@ -14,7 +15,11 @@ export default function ProjectNav() {
               "border-b-4": categoryState === "featured",
             })}
           >
-            <button name="work" value="featured">
+            <button
+              name="work"
+              value="featured"
+              onClick={() => clickEvent("featured", "Project Nav Bar")}
+            >
               Featured
             </button>
           </li>
@@ -23,7 +28,11 @@ export default function ProjectNav() {
               "border-b-4": categoryState === "other",
             })}
           >
-            <button name="work" value="other">
+            <button
+              name="work"
+              value="other"
+              onClick={() => clickEvent("other", "Project Nav Bar")}
+            >
               Other
             </button>
           </li>

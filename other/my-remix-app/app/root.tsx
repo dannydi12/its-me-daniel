@@ -22,6 +22,20 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Links />
       </head>
       <body>
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-QLGVG137CN"
+        ></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-QLGVG137CN');`,
+          }}
+        ></script>
         {children}
         <ScrollRestoration />
         <Scripts />

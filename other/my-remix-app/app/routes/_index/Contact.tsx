@@ -69,13 +69,15 @@ export default function Contact() {
         robot uprising.
       </p>
 
-      {/* TODO: make an action call! */}
       {/* TODO: install gtag! */}
       {/* TODO: finish metadata */}
       {/* TODO: replace next js project and attempt deploy */}
       <fetcher.Form action="/surprise" method="post" preventScrollReset>
         <button
           type="submit"
+          onClick={() => {
+            clickEvent("Scare Daniel");
+          }}
           disabled={!!fetcher.data || fetcher.state !== "idle"}
           className="text-primary-500 border-[3px] py-3 px-5 mx-auto block mt-8 text-xl text-center border-primary-500 hover:bg-primary-500 hover:text-white"
         >
