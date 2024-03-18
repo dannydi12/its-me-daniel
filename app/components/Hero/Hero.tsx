@@ -1,4 +1,6 @@
 import { useState } from "react";
+import scaredSVG from "assets/scared.svg?url";
+import happySVG from "assets/happy.svg?url";
 
 export default function Hero() {
   const [interacted, setInteracted] = useState(false);
@@ -21,7 +23,7 @@ export default function Hero() {
       >
         <img
           className="max-w-min"
-          src={interacted ? "/assets/scared.svg" : "/assets/happy.svg"}
+          src={interacted ? scaredSVG : happySVG}
           alt="me"
         />
       </div>

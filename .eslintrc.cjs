@@ -44,7 +44,12 @@ module.exports = {
           { name: "NavLink", linkAttribute: "to" },
         ],
         "import/resolver": {
-          alias: ["@", "./app/"],
+          alias: {
+            map: [
+              ["@", "./app/"],
+              ["assets", "./assets/"],
+            ],
+          },
           typescript: {},
         },
       },
