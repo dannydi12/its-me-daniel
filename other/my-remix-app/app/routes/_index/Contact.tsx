@@ -1,4 +1,5 @@
 import TimeBasedMesage from "./TimeBasedMessage";
+import { clickEvent, hoverEvent } from "./tracking";
 
 export default function Contact() {
   return (
@@ -9,8 +10,8 @@ export default function Contact() {
       <ul className="list-disc text-[1.38rem] leading-[2.1rem] pl-10 my-6">
         <li>
           <a
-            // onMouseEnter={() => hoverEvent("Github")}
-            // onClick={() => clickEvent("Github")}
+            onMouseEnter={() => hoverEvent("Github")}
+            onClick={() => clickEvent("Github")}
             className="underline text-primary-600 hover:text-primary-500"
             href="https://github.com/dannydi12/"
             target="_blank"
@@ -21,8 +22,8 @@ export default function Contact() {
         </li>
         <li>
           <a
-            // onMouseEnter={() => hoverEvent("LinkedIn")}
-            // onClick={() => clickEvent("LinkedIn")}
+            onMouseEnter={() => hoverEvent("LinkedIn")}
+            onClick={() => clickEvent("LinkedIn")}
             className="underline text-primary-600 hover:text-primary-500"
             href="https://www.linkedin.com/in/danieldivenere/"
             target="_blank"
@@ -33,8 +34,8 @@ export default function Contact() {
         </li>
         <li>
           <a
-            // onMouseEnter={() => hoverEvent("Email")}
-            // onClick={() => clickEvent("Email")}
+            onMouseEnter={() => hoverEvent("Email")}
+            onClick={() => clickEvent("Email")}
             className="underline text-primary-600 hover:text-primary-500"
             href="mailto:hi@danthebuilder..com?subject=Hey,%20let's%20talk.&body=What's%20the%20meaning%20of%20Life,%20the%20Universe,%20and%20Everything?"
             target="_blank"
