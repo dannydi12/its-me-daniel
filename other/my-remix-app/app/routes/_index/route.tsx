@@ -3,6 +3,7 @@ import Hero from "./Hero";
 import About from "./About";
 import Work from "./Work";
 import Contact from "./Contact";
+import Footer from "./Footer";
 
 export const meta: MetaFunction = () => {
   return [
@@ -18,6 +19,7 @@ export default function Index() {
       <About />
       <Work />
       <Contact />
+      <Footer />
     </main>
   );
 }
