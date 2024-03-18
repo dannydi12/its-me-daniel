@@ -1,8 +1,23 @@
-import { Link } from "@remix-run/react";
+import { Link, useFetcher } from "@remix-run/react";
 import TimeBasedMesage from "./TimeBasedMessage";
 import { clickEvent, hoverEvent } from "./tracking";
+import { action } from "../surprise";
 
 export default function Contact() {
+  const fetcher = useFetcher<typeof action>();
+
+  const buttonState = () => {
+    if (fetcher.state === "submitting") {
+      return "Scaring Daniel...";
+    }
+
+    if (fetcher.data) {
+      return "Daniel is now terrified.";
+    }
+
+    return "Scare Daniel";
+  };
+
   return (
     <section className="p-4 max-w-3xl mx-auto">
       <h2 className="my-10 text-center font-semibold text-4xl">Contact</h2>
@@ -58,9 +73,15 @@ export default function Contact() {
       {/* TODO: install gtag! */}
       {/* TODO: finish metadata */}
       {/* TODO: replace next js project and attempt deploy */}
-      <button className="text-primary-500 border-[3px] py-3 px-5 mx-auto block mt-8 text-xl text-center border-primary-500 hover:bg-primary-500 hover:text-white">
-        Scare Daniel
-      </button>
+      <fetcher.Form action="/surprise" method="post" preventScrollReset>
+        <button
+          type="submit"
+          disabled={!!fetcher.data || fetcher.state !== "idle"}
+          className="text-primary-500 border-[3px] py-3 px-5 mx-auto block mt-8 text-xl text-center border-primary-500 hover:bg-primary-500 hover:text-white"
+        >
+          {buttonState()}
+        </button>
+      </fetcher.Form>
     </section>
   );
 }
