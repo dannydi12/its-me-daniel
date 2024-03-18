@@ -32,15 +32,23 @@ export default function About() {
       <h2 className="m-10 text-center font-semibold text-[1.6rem]">
         I&apos;m a builder.
       </h2>
+
       <p>
         I spend my time developing new websites and products while
         simultaneously willing quirky side-projects into existence. I tend to
         impulsively learn new things for no apparent reason, take really long
         walks in nature, and I think Indie music is pretty cool.
       </p>
+
+      <p className="underline mt-10 mb-5">languages.json:</p>
       <pre className="json hljs p-4 rounded-xl font-mono text-lg leading-6">
         <code dangerouslySetInnerHTML={{ __html: htmlWithCursor }} />
       </pre>
+
+      <p className="my-5">
+        But don&apos;t worry, I also speak human languages like English and
+        French.
+      </p>
     </section>
   );
 }
