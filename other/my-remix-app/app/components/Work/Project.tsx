@@ -1,5 +1,5 @@
 import { Link } from "@remix-run/react";
-import { clickEvent } from "./tracking";
+import { clickEvent } from "../Contact/tracking";
 
 type Props = {
   title: string;

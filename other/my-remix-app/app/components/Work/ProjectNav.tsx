@@ -1,6 +1,6 @@
 import { Form, useSearchParams } from "@remix-run/react";
 import clsx from "clsx";
-import { clickEvent } from "./tracking";
+import { clickEvent } from "../Contact/tracking";
 
 export default function ProjectNav() {
   const [searchParams] = useSearchParams();
