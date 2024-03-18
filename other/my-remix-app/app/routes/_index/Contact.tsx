@@ -69,9 +69,6 @@ export default function Contact() {
         robot uprising.
       </p>
 
-      {/* TODO: install gtag! */}
-      {/* TODO: finish metadata */}
-      {/* TODO: replace next js project and attempt deploy */}
       <fetcher.Form action="/surprise" method="post" preventScrollReset>
         <button
           type="submit"
