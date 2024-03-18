@@ -7,7 +7,7 @@ export default function ProjectNav() {
   const categoryState = searchParams.get("work") || "featured";
 
   return (
-    <nav className="max-w-[50%] mx-auto">
+    <nav className="max-w-[80%] sm:max-w-[50%] mx-auto">
       <Form preventScrollReset>
         <ul className="flex justify-between">
           <li
