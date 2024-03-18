@@ -1,3 +1,4 @@
+import { Link } from "@remix-run/react";
 import TimeBasedMesage from "./TimeBasedMessage";
 import { clickEvent, hoverEvent } from "./tracking";
 
@@ -9,40 +10,40 @@ export default function Contact() {
 
       <ul className="list-disc text-[1.38rem] leading-[2.1rem] pl-10 my-6">
         <li>
-          <a
+          <Link
             onMouseEnter={() => hoverEvent("Github")}
             onClick={() => clickEvent("Github")}
             className="underline text-primary-600 hover:text-primary-500"
-            href="https://github.com/dannydi12/"
+            to="https://github.com/dannydi12/"
             target="_blank"
             rel="noopener noreferrer"
           >
             Github
-          </a>
+          </Link>
         </li>
         <li>
-          <a
+          <Link
             onMouseEnter={() => hoverEvent("LinkedIn")}
             onClick={() => clickEvent("LinkedIn")}
             className="underline text-primary-600 hover:text-primary-500"
-            href="https://www.linkedin.com/in/danieldivenere/"
+            to="https://www.linkedin.com/in/danieldivenere/"
             target="_blank"
             rel="noopener noreferrer"
           >
             LinkedIn
-          </a>
+          </Link>
         </li>
         <li>
-          <a
+          <Link
             onMouseEnter={() => hoverEvent("Email")}
             onClick={() => clickEvent("Email")}
             className="underline text-primary-600 hover:text-primary-500"
-            href="mailto:hi@danthebuilder..com?subject=Hey,%20let's%20talk.&body=What's%20the%20meaning%20of%20Life,%20the%20Universe,%20and%20Everything?"
+            to="mailto:hi@danthebuilder..com?subject=Hey,%20let's%20talk.&body=What's%20the%20meaning%20of%20Life,%20the%20Universe,%20and%20Everything?"
             target="_blank"
             rel="noopener noreferrer"
           >
             Email
-          </a>
+          </Link>
         </li>
       </ul>
 
@@ -53,6 +54,10 @@ export default function Contact() {
         robot uprising.
       </p>
 
+      {/* TODO: make an action call! */}
+      {/* TODO: install gtag! */}
+      {/* TODO: finish metadata */}
+      {/* TODO: replace next js project and attempt deploy */}
       <button className="text-primary-500 border-[3px] py-3 px-5 mx-auto block mt-8 text-xl text-center border-primary-500 hover:bg-primary-500 hover:text-white">
         Scare Daniel
       </button>

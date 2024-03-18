@@ -10,8 +10,8 @@ export default function ProjectNav() {
       <Form preventScrollReset>
         <ul className="flex justify-between">
           <li
-            className={clsx("text-2xl", {
-              "border-b-4 border-primary-500": categoryState === "featured",
+            className={clsx("text-2xl hover:border-b-4 border-primary-500", {
+              "border-b-4": categoryState === "featured",
             })}
           >
             <button name="work" value="featured">
@@ -19,8 +19,8 @@ export default function ProjectNav() {
             </button>
           </li>
           <li
-            className={clsx("text-2xl", {
-              "border-b-4 border-primary-500": categoryState === "other",
+            className={clsx("text-2xl hover:border-b-4 border-primary-500", {
+              "border-b-4": categoryState === "other",
             })}
           >
             <button name="work" value="other">

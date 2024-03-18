@@ -26,6 +26,8 @@ export default function Project({
         <div className="flex justify-around">
           <Link
             className="text-primary-500 border-[3px] p-2 text-lg w-[30%] text-center border-primary-500 hover:bg-primary-500 hover:text-white"
+            rel="noreferrer"
+            target="_blank"
             to={live}
           >
             Live
@@ -33,6 +35,8 @@ export default function Project({
           {repo && (
             <Link
               className="text-primary-500 border-[3px] p-2 text-lg w-[30%] text-center border-primary-500 hover:bg-primary-500 hover:text-white"
+              rel="noreferrer"
+              target="_blank"
               to={repo}
             >
               Repo
