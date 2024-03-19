@@ -132,7 +132,7 @@ router.addHandler("job", async ({ request, page, log, pushData }) => {
 Crawlee has this incredibly clever routing technique called `label`s. It allows you to queue up other pages for crawling and send those tasks to different "channels" so you can easily compartmentalize your logic. I always ended up with spaghetti code when writing my own crawlers from scratch because I'd have a mess of `for` loops and a ton of deeply nested statements. With this new paradigm, it's easy to keep things clean.
 
 You might be wondering what `scrapeMultiButton` and `scrapeButton` are: they are two helper functions I built to handle this funky UI:
-![ Indeed's user interface with complex button representing the various properties of a job posting](./assets/Pasted%20image%2020240316194053.png)
+![ Indeed's user interface with complex button representing the various properties of a job posting](assets/indeed-screnshot.png)
 
 If you want to scrape these as well, here's the implementation in `buttonScrapers.ts`:
 ```ts
