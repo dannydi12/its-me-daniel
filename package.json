@@ -20,7 +20,12 @@
     "luxon": "^3.4.4",
     "node-telegram-bot-api": "^0.65.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "rehype-stringify": "^10.0.0",
+    "remark-parse": "^11.0.0",
+    "remark-rehype": "^11.1.0",
+    "to-vfile": "^8.0.0",
+    "unified": "^11.0.4"
   },
   "devDependencies": {
     "@remix-run/dev": "^2.8.1",
