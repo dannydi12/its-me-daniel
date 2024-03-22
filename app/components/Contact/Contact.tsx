@@ -1,7 +1,7 @@
 import { Link, useFetcher } from "@remix-run/react";
 import TimeBasedMesage from "./TimeBasedMessage";
 import { clickEvent, hoverEvent } from "./tracking";
-import { action } from "../../routes/surprise";
+import { action } from "@/routes/surprise";
 
 export default function Contact() {
   const fetcher = useFetcher<typeof action>();

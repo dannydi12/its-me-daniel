@@ -46,8 +46,8 @@ module.exports = {
         "import/resolver": {
           alias: {
             map: [
-              ["@", "./app/"],
-              ["assets", "./assets/"],
+              ["@/*", "./app/*"],
+              ["assets/*", "./assets/*"],
             ],
           },
           typescript: {},
