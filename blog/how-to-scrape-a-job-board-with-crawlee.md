@@ -3,7 +3,7 @@ share: true
 slug: how-to-scrape-a-job-board-with-crawlee
 title: How To Scrape A Job Board With Crawlee
 ---
-# Why
+## Why
 Having known many restauranters, their most pressing and consistent pain point has been sourcing willing and competent labor. Especially when it comes to small businesses, it can be a struggle to find candidates since [most flock to big name brands for perks](https://www.starbucksbenefits.com/en-us/home/stock-savings/future-roast-401k/) that most nascent businesses can't compete with. To compound, mom-and-pop shops tend to be overlooked since they reside off the busy boulevard corner-lots the larger corporations inhabit. Altogether, this can make it quite difficult to find new people to work with.
 
 I decided to take it into my own hands to level the playing field for small businesses in the arena of finding work. Which is why I'll be building a job board specifically for small business restaurants in Burbank, CA. Think that's niche enough?
@@ -11,7 +11,7 @@ I decided to take it into my own hands to level the playing field for small busi
 My first problem will be solving [the "chicken or the egg" problem](https://www.growthmentor.com/glossary/chicken-and-egg-problem/#:~:text=The%20problem%20occurs%20when%20a,of%20both%20buyers%20and%20sellers.). A job board is a two-sided marketplace: candidates and employers. Which do I attempt to serve first? If I go for businesses first, I will need to have a large pool of candidates actively searching for a job. If I go for candidates, I will need to have a large pool of employers with unfilled positions. Luckily there are already several open datasets of job postings I can pull from and serve under my own site. This will enable me to serve candidates first with existing job postings, build up the candidate traffic, *then* market to businesses in search of candidates. 
 
 So yes, I will be scraping Indeed. I'm just- I'm just scraping [Indeed](https://www.indeed.com/).
-# How
+## How
 After much investigation and internal debate, I've landed on [crawlee](https://crawlee.dev/) and [playwright](https://playwright.dev/) as my tool of choice. Crawlee is purpose-built as a crawler. It has some really neat architectural decisions that keep the code real clean (I'll touch on that in a bit). As for Playwright, it's the latest iteration of [Puppeteer](https://pptr.dev/) and I've always enjoyed Puppeteer's SDK shape.
 
 First thing's first, go ahead and run this command to get a starter project going:
