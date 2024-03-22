@@ -1,9 +1,10 @@
 ---
 share: true
 slug: how-to-scrape-a-job-board-with-crawlee
+title: How To Scrape A Job Board With Crawlee
 ---
 # Why
-Having known many restauranters, their most pressing and consistent pain point has been sourcing willing and competent labor. Especially when it comes to small businesses, it can be a struggle to find candidates since [most flock to big name brands for perks](https://www.starbucksbenefits.com/en-us/home/stock-savings/future-roast-401k/) that most nascent businesses can't compete with. To compound, mom-and-pop shops tend to be overlooked since they reside off the busy boulevard corner lots the larger corporations inhabit. Altogether, this can make it quite difficult to find new people to work with.
+Having known many restauranters, their most pressing and consistent pain point has been sourcing willing and competent labor. Especially when it comes to small businesses, it can be a struggle to find candidates since [most flock to big name brands for perks](https://www.starbucksbenefits.com/en-us/home/stock-savings/future-roast-401k/) that most nascent businesses can't compete with. To compound, mom-and-pop shops tend to be overlooked since they reside off the busy boulevard corner-lots the larger corporations inhabit. Altogether, this can make it quite difficult to find new people to work with.
 
 I decided to take it into my own hands to level the playing field for small businesses in the arena of finding work. Which is why I'll be building a job board specifically for small business restaurants in Burbank, CA. Think that's niche enough?
 
@@ -25,8 +26,8 @@ import { PlaywrightCrawler, ProxyConfiguration } from 'crawlee';
 
 import { router } from './routes.js';
 
--const startUrls = ['https://crawlee.dev/'];
-+const startUrls = ['https://www.indeed.com/jobs?q=[ENTER YOUR DESIRED JOB HERE]&l=Burbank%2C+CA&radius=35'];
+- const startUrls = ['https://crawlee.dev/'];
++ const startUrls = ['https://www.indeed.com/jobs?q=[ENTER YOUR DESIRED JOB HERE]&l=Burbank%2C+CA&radius=35'];
 
 const crawler = new PlaywrightCrawler({
     // proxyConfiguration: new ProxyConfiguration({ proxyUrls: ['...'] }),
@@ -171,8 +172,8 @@ export const scrapeMultiButton = async (page: Page, selector: string) => {
 Lastly, we'll want to dump this data into a CSV so we can pipe it into our database of choice:
 ```diff
 // For more information, see https://crawlee.dev/
--import { PlaywrightCrawler, ProxyConfiguration } from 'crawlee';
-+import { PlaywrightCrawler, ProxyConfiguration, Dataset } from 'crawlee';
+- import { PlaywrightCrawler, ProxyConfiguration } from 'crawlee';
++ import { PlaywrightCrawler, ProxyConfiguration, Dataset } from 'crawlee';
 
 import { router } from './routes.js';
 
