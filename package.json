@@ -33,7 +33,6 @@
     "to-vfile": "^8.0.0",
     "unified": "^11.0.4"
   },
-  "installCommand": "yarn install",
   "devDependencies": {
     "@remix-run/dev": "^2.8.1",
     "@tailwindcss/aspect-ratio": "^0.4.2",
@@ -61,6 +60,5 @@
   },
   "engines": {
     "node": "18"
-  },
-  "packageManager": "yarn@4.1.1"
+  }
 }
