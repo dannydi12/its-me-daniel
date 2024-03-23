@@ -6,6 +6,7 @@ import { ChevronLeftIcon, ClockIcon } from "@heroicons/react/24/solid";
 import syntaxHighlighting from "highlight.js/styles/base16/bright.min.css?url";
 import syntaxHighlightingOverride from "@/styles/blog-syntax-highlighting-override.css?url";
 import { buildPostList } from "../utils/markdownParsing";
+import Tag from "@/components/Tag";
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: syntaxHighlighting },
@@ -53,6 +54,11 @@ export default function Blog() {
                 <p className="mt-2 text-base font-medium text-gray-700">
                   {post.preview}
                 </p>
+                <div className="mt-4 flex gap-1">
+                  {post.tags.map((tag) => (
+                    <Tag key={tag} text={tag} />
+                  ))}
+                </div>
               </li>
             </Link>
           ))}
