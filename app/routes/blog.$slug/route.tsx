@@ -32,8 +32,8 @@ export default function PostSlug() {
 
   return (
     <>
-      <div className="flex min-h-[30vh] items-center justify-center bg-primary-500 p-2 sm:p-20">
-        <h1 className="text-center text-5xl font-bold text-white drop-shadow sm:text-7xl">
+      <div className="flex min-h-[30vh] items-center justify-center bg-primary-500 p-2 py-7 sm:p-20">
+        <h1 className="text-center text-5xl font-bold text-white drop-shadow sm:text-7xl sm:mt-0 mt-10">
           {meta.title}
         </h1>
       </div>
