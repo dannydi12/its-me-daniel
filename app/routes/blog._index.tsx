@@ -22,8 +22,6 @@ export const loader = async () => {
 export default function Blog() {
   const { posts } = useLoaderData<typeof loader>();
 
-  console.log(posts);
-
   return (
     <div className="flex min-h-[100vh] flex-col">
       <header className="bg-primary-500 px-5 pt-7">
@@ -54,10 +52,17 @@ export default function Blog() {
                 <p className="mt-2 text-base font-medium text-gray-700">
                   {post.preview}
                 </p>
-                <div className="mt-4 flex gap-1">
-                  {post.tags.map((tag) => (
-                    <Tag key={tag} text={tag} />
-                  ))}
+                <div className="mt-4 flex items-center justify-between">
+                  <div className=" flex flex-wrap gap-1">
+                    {post.tags.map((tag) => (
+                      <Tag key={tag} text={tag} />
+                    ))}
+                  </div>
+
+                  <p className="flex items-center gap-1 text-base font-medium text-primary-600">
+                    <ClockIcon className="h-5 w-5" />
+                    {post.readTime.toFixed(0)}m
+                  </p>
                 </div>
               </li>
             </Link>
