@@ -22,6 +22,10 @@ export const loader = async () => {
 export default function Blog() {
   const { posts } = useLoaderData<typeof loader>();
 
+  const sortedPosts = posts
+    .map((post) => ({ ...post, Date: new Date(post.Date || 0) }))
+    .sort((a, b) => b.Date.valueOf() - a.Date.valueOf());
+
   return (
     <div className="flex min-h-[100vh] flex-col">
       <header className="bg-primary-500 px-5 pt-7">
@@ -43,7 +47,7 @@ export default function Blog() {
       </header>
       <main className="mx-auto max-w-2xl px-4">
         <ul className="my-14 flex flex-col gap-6">
-          {posts.map((post) => (
+          {sortedPosts.map((post) => (
             <Link key={post.slug} to={`/blog/${post.slug}`}>
               <li className="group rounded-xl p-6 shadow transition-[2s] hover:bg-gray-50 hover:shadow-md">
                 <h2 className="text-2xl font-bold group-hover:text-primary-600">

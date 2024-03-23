@@ -4,4 +4,5 @@ export type FrontMatterData = {
   tags: string[];
   title: string;
   readTime: number;
+  Date: string;
 };
