@@ -1,6 +1,7 @@
 ---
 share: true
 slug: this-blog-is-powered-by-ice-cream
+title: This Blog Is Powered By Ice Cream
 ---
 
 I'm serious. 
