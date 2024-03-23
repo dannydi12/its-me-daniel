@@ -1,3 +1,13 @@
 .hljs-keyword {
   color: #a29bfe;
 }
+
+/* code snippets */
+p > code {
+  font-size: 1.2rem !important;
+}
+
+/* code blocks */
+pre > code {
+  font-size: 1rem !important;
+}

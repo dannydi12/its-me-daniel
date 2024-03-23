@@ -38,7 +38,7 @@ export default function PostSlug() {
         </h1>
       </div>
       <main
-        className="pt-12 sm:mx-auto m-5 prose sm:prose-lg prose-h2:text-4xl prose-img:mx-auto prose-h2:mb-5 prose-h2:sm:text-5xl prose-a:text-primary-600 prose-img:rounded-md prose-code:rounded-md prose-p:text-gray-950 prose-pre:p-0 prose-pre:bg-transparent"
+        className="pt-12 sm:mx-auto m-5 prose sm:prose-lg prose-h2:text-4xl prose-img:mx-auto prose-h2:mb-5 prose-h2:sm:text-5xl prose-a:text-primary-600 prose-img:rounded-md prose-code:rounded-md prose-p:text-gray-950 prose-pre:p-0 prose-pre:bg-transparent prose-code:before:content-none prose-code:after:content-none prose-code:bg-gray-200 prose-code:px-2 prose-code:py-1 "
         dangerouslySetInnerHTML={{ __html: content }}
       />
     </>
