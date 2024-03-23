@@ -4,6 +4,7 @@ slug: this-blog-is-powered-by-ice-cream
 title: This Blog Is Powered By Ice Cream
 tags:
   - void
+Date: 2024-03-22
 ---
 
 I'm serious. 
