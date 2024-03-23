@@ -3,7 +3,7 @@ import { json } from "@remix-run/node";
 import { Link, useLoaderData } from "@remix-run/react";
 import { getMarkdownFilePath } from "./getMarkdownFilePath";
 import { parseMarkdown } from "./markdownParsing";
-import { ChevronLeftIcon } from "@heroicons/react/24/solid";
+import { ChevronLeftIcon, ClockIcon } from "@heroicons/react/24/solid";
 
 import syntaxHighlighting from "highlight.js/styles/base16/bright.min.css?url";
 import syntaxHighlightingOverride from "@/styles/blog-syntax-highlighting-override.css?url";
@@ -34,18 +34,22 @@ export default function PostSlug() {
   return (
     <>
       <header className="bg-primary-500 p-5 py-7">
-        <Link
-          className="hover:cursor inline-block rounded py-2 pl-2 pr-4 backdrop-brightness-75 transition-all hover:backdrop-brightness-90"
-          to={"/"}
-        >
-          <div className="flex items-center gap-1 text-xl text-white">
-            <ChevronLeftIcon className="h-5 w-5 font-bold" />
+        <div className="flex justify-between">
+          <Link
+            className="hover:cursor flex items-center gap-1 rounded py-2 pl-2 pr-4 text-xl text-white backdrop-brightness-75 transition-all hover:backdrop-brightness-90"
+            to={"/"}
+          >
+            <ChevronLeftIcon className="h-5 w-5" />
             All Posts
-          </div>
-        </Link>
+          </Link>
+          <p className="flex items-center gap-1 text-base font-medium text-white">
+            <ClockIcon className="h-5 w-5" />
+            {meta.readTime.toFixed(0)}m
+          </p>
+        </div>
 
         <div className="sm:p-15 flex min-h-[30vh] items-center justify-center">
-          <h1 className="my-10 text-center text-5xl font-bold text-white drop-shadow sm:my-0 sm:text-7xl">
+          <h1 className="my-10 text-center text-5xl font-bold text-white sm:my-0 sm:text-7xl">
             {meta.title}
           </h1>
         </div>
