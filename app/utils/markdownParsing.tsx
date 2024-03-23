@@ -9,6 +9,7 @@ import rehypeStringify from "rehype-stringify";
 import rehypeHighlight from "rehype-highlight";
 import rehypeSlug from "rehype-slug";
 import rehypeExternalLinks from "rehype-external-links";
+import rehypeRewrite from "rehype-rewrite";
 import { readingTime } from "hast-util-reading-time";
 import { read } from "to-vfile";
 import { getFolderPath, getMarkdownFilePath } from "./resolveFilePaths";
@@ -34,6 +35,22 @@ export const parseMarkdown = async (slug: string) => {
     .use(rehypeSlug)
     .use(inferReadingTime)
     .use(rehypeExternalLinks, { rel: "noopener noreferrer", target: "_blank" })
+    .use(rehypeRewrite, {
+      selector: "img",
+      rewrite: (node) => {
+        if (node.type !== "element") {
+          return;
+        }
+
+        // rewrite image URLs to Vite's static folder (/public)
+        const src = node.properties.src as string;
+        if (src.match("public/blog/assets")) {
+          const splitPath = src.split("/");
+          const filename = splitPath[splitPath.length - 1];
+          node.properties.src = `/blog/assets/${filename}`;
+        }
+      },
+    })
     .use(rehypeHighlight)
     .use(rehypeStringify)
     .process(await read(filePath));
