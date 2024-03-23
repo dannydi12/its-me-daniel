@@ -1,30 +1,33 @@
-import type { LinksFunction, LoaderFunctionArgs } from "@remix-run/node";
+import type {
+  LinksFunction,
+  LoaderFunctionArgs,
+  MetaFunction,
+} from "@remix-run/node";
 import { json } from "@remix-run/node";
 import { Link, useLoaderData } from "@remix-run/react";
-import { getMarkdownFilePath } from "./getMarkdownFilePath";
-import { parseMarkdown } from "./markdownParsing";
+import { parseMarkdown } from "../../utils/markdownParsing";
 import { ChevronLeftIcon, ClockIcon } from "@heroicons/react/24/solid";
 
 import syntaxHighlighting from "highlight.js/styles/base16/bright.min.css?url";
 import syntaxHighlightingOverride from "@/styles/blog-syntax-highlighting-override.css?url";
+import { FrontMatterData } from "@/utils/frontmatter.types";
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: syntaxHighlighting },
   { rel: "stylesheet", href: syntaxHighlightingOverride },
 ];
 
+// TODO: not working yet
+export const meta: MetaFunction<typeof loader> = ({ data }) => {
+  return [{ title: data?.meta.title }];
+};
+
 export const loader = async ({ params }: LoaderFunctionArgs) => {
-  const filePath = getMarkdownFilePath(params.slug || "");
-  const result = await parseMarkdown(filePath);
+  const result = await parseMarkdown(params.slug || "");
 
   return json({
     content: result.toString(),
-    meta: result.data.frontmatter as {
-      share: boolean;
-      slug: string;
-      title: string;
-      readTime: number;
-    },
+    meta: result.data.frontmatter as FrontMatterData,
   });
 };
 
@@ -37,7 +40,7 @@ export default function PostSlug() {
         <div className="flex justify-between">
           <Link
             className="hover:cursor flex items-center gap-1 rounded py-2 pl-2 pr-4 text-xl text-white backdrop-brightness-75 transition-all hover:backdrop-brightness-90"
-            to={"/"}
+            to={"/blog"}
           >
             <ChevronLeftIcon className="h-5 w-5" />
             All Posts

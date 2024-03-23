@@ -5,7 +5,7 @@ import { ChevronLeftIcon, ClockIcon } from "@heroicons/react/24/solid";
 
 import syntaxHighlighting from "highlight.js/styles/base16/bright.min.css?url";
 import syntaxHighlightingOverride from "@/styles/blog-syntax-highlighting-override.css?url";
-import { buildPostList } from "../blog.$slug/markdownParsing";
+import { buildPostList } from "../../utils/markdownParsing";
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: syntaxHighlighting },

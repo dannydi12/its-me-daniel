@@ -11,9 +11,10 @@ import rehypeSlug from "rehype-slug";
 import rehypeExternalLinks from "rehype-external-links";
 import { readingTime } from "hast-util-reading-time";
 import { read } from "to-vfile";
-import { getFolderPath, getMarkdownFilePath } from "./getMarkdownFilePath";
+import { getFolderPath, getMarkdownFilePath } from "./resolveFilePaths";
 
 import fs from "fs";
+import { FrontMatterData } from "./frontmatter.types";
 
 const inferReadingTime = () => {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any -- can't find the types for these 🤷‍♂️
@@ -72,13 +73,7 @@ export const buildPostList = async () => {
       .use(rehypeStringify)
       .process(await read(path));
 
-    const frontmatter = result.data.frontmatter as {
-      share: boolean;
-      slug: string;
-      title: string;
-      readTime: number;
-    };
-
+    const frontmatter = result.data.frontmatter as FrontMatterData;
     const previewData = result.data.fm as { preview: string[] };
     const previewText = previewData.preview;
 
