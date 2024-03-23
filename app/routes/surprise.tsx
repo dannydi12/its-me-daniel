@@ -29,7 +29,7 @@ export async function action({ request }: ActionFunctionArgs) {
   const currentTimePST = DateTime.now().setZone("America/Los_Angeles").hour;
   const isWakingHours = currentTimePST >= 8 && currentTimePST <= 22;
   if (!isWakingHours) {
-    return;
+    return { success: true };
   }
 
   if (process.env.LED_URL) {
