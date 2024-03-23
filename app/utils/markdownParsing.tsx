@@ -74,10 +74,9 @@ export const buildPostList = async () => {
       .process(await read(path));
 
     const frontmatter = result.data.frontmatter as FrontMatterData;
-    const previewData = result.data.fm as { preview: string[] };
-    const previewText = previewData.preview;
+    const previewData = result.data.fm as { preview: string };
 
-    return { ...frontmatter, preview: previewText };
+    return { ...frontmatter, preview: previewData.preview };
   });
 
   return await Promise.all(posts);
