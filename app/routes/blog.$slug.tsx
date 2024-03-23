@@ -17,9 +17,8 @@ export const links: LinksFunction = () => [
   { rel: "stylesheet", href: syntaxHighlightingOverride },
 ];
 
-// TODO: not working yet
 export const meta: MetaFunction<typeof loader> = ({ data }) => {
-  return [{ title: data?.meta.title }];
+  return [{ title: `${data?.meta?.title} | Daniel Di Venere` }];
 };
 
 export const loader = async ({ params }: LoaderFunctionArgs) => {
