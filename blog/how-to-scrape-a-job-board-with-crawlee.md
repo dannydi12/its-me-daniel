@@ -6,6 +6,7 @@ tags:
   - how-to
   - scraping
   - playwright
+Date: 2024-03-23
 ---
 ## Why
 Having known many restauranters, their most pressing and consistent pain point has been sourcing willing and competent labor. Especially when it comes to small businesses, it can be a struggle to find candidates since [most flock to big name brands for perks](https://www.starbucksbenefits.com/en-us/home/stock-savings/future-roast-401k/) that most nascent businesses can't compete with. To compound, mom-and-pop shops tend to be overlooked since they reside off the busy boulevard corner-lots the larger corporations inhabit. Altogether, this can make it quite difficult to find new people to work with.
