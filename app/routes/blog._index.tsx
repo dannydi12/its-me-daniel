@@ -1,7 +1,7 @@
 import type { LinksFunction } from "@remix-run/node";
 import { json } from "@remix-run/node";
 import { Link, useLoaderData } from "@remix-run/react";
-import { ChevronLeftIcon, ClockIcon } from "@heroicons/react/24/solid";
+import { ChevronLeftIcon, ClockIcon } from "@heroicons/react/20/solid";
 
 import syntaxHighlighting from "highlight.js/styles/base16/bright.min.css?url";
 import syntaxHighlightingOverride from "@/styles/blog-syntax-highlighting-override.css?url";
@@ -59,7 +59,7 @@ export default function Blog() {
                     ))}
                   </div>
 
-                  <p className="flex items-center gap-1 text-base font-medium text-primary-600">
+                  <p className="flex items-center gap-1 text-sm font-bold text-gray-400">
                     <ClockIcon className="h-5 w-5" />
                     {post.readTime.toFixed(0)}m
                   </p>
