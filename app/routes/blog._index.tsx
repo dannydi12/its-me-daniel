@@ -1,4 +1,4 @@
-import type { LinksFunction, LoaderFunctionArgs } from "@remix-run/node";
+import type { LinksFunction } from "@remix-run/node";
 import { json } from "@remix-run/node";
 import { Link, useLoaderData } from "@remix-run/react";
 import { ChevronLeftIcon, ClockIcon } from "@heroicons/react/24/solid";
@@ -12,7 +12,7 @@ export const links: LinksFunction = () => [
   { rel: "stylesheet", href: syntaxHighlightingOverride },
 ];
 
-export const loader = async ({ params }: LoaderFunctionArgs) => {
+export const loader = async () => {
   const posts = await buildPostList();
 
   return json({ posts });
@@ -24,7 +24,7 @@ export default function Blog() {
   console.log(posts);
 
   return (
-    <>
+    <div className="flex min-h-[100vh] flex-col">
       <header className="bg-primary-500 px-5 pt-7">
         <div className="flex justify-between">
           <Link
@@ -45,12 +45,24 @@ export default function Blog() {
           👷
         </p>
       </header>
-      <main
-        className="prose m-5 pt-12 sm:prose-lg prose-h2:mb-5 prose-h2:text-4xl prose-p:text-gray-950 prose-a:text-primary-600 prose-code:rounded-md prose-code:bg-gray-200 prose-code:px-2 prose-code:py-1 prose-code:before:content-none prose-code:after:content-none prose-pre:bg-transparent prose-pre:p-0 prose-img:mx-auto prose-img:rounded-md sm:mx-auto prose-h2:sm:text-5xl "
-        // dangerouslySetInnerHTML={{ __html: content }}
-      />
+      <main className="mx-auto max-w-2xl px-4">
+        <ul className="my-14 flex flex-col gap-6">
+          {posts.map((post) => (
+            <Link key={post.slug} to={`/blog/${post.slug}`}>
+              <li className="group rounded-xl p-6 shadow transition-[2s] hover:bg-gray-50 hover:shadow-md">
+                <h2 className="text-2xl font-bold group-hover:text-primary-600">
+                  {post.title}
+                </h2>
+                <p className="mt-2 text-base font-medium text-gray-700">
+                  {post.preview}
+                </p>
+              </li>
+            </Link>
+          ))}
+        </ul>
+      </main>
 
-      <footer className="mt-[15vh] bg-primary-500 font-medium text-white">
+      <footer className="mt-auto bg-primary-500 font-medium text-white">
         <p className="py-4 text-center text-lg">
           Crafted by{" "}
           <Link className="underline" to={"/"}>
@@ -61,6 +73,6 @@ export default function Blog() {
           </span>
         </p>
       </footer>
-    </>
+    </div>
   );
 }
