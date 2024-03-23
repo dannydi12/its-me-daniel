@@ -149,7 +149,7 @@ const STORE = [
       "Chai",
     ],
     repo: "https://github.com/dannydi12/thoughtbin-client",
-    live: "https://thoughtbin.danthebuilder..com",
+    live: "https://thoughtbin.danthebuilder.com",
   },
   {
     title: "Chocolate Milk Media",
