@@ -1,6 +1,6 @@
 import hljs from "highlight.js/lib/core";
 import json from "highlight.js/lib/languages/json";
-import "./syntax-highlighting-override.css";
+import "@/styles/syntax-highlighting-override.css";
 
 export default function About() {
   const languages = `{
