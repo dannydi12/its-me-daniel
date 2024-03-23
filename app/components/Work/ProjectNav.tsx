@@ -7,11 +7,11 @@ export default function ProjectNav() {
   const categoryState = searchParams.get("work") || "featured";
 
   return (
-    <nav className="max-w-[80%] sm:max-w-[50%] mx-auto">
+    <nav className="mx-auto max-w-[80%] sm:max-w-[50%]">
       <Form preventScrollReset>
         <ul className="flex justify-between">
           <li
-            className={clsx("text-2xl hover:border-b-4 border-primary-500", {
+            className={clsx("border-primary-500 text-2xl hover:border-b-4", {
               "border-b-4": categoryState === "featured",
             })}
           >
@@ -24,7 +24,7 @@ export default function ProjectNav() {
             </button>
           </li>
           <li
-            className={clsx("text-2xl hover:border-b-4 border-primary-500", {
+            className={clsx("border-primary-500 text-2xl hover:border-b-4", {
               "border-b-4": categoryState === "other",
             })}
           >

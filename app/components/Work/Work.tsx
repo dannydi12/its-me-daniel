@@ -12,8 +12,8 @@ export default function Work() {
   );
 
   return (
-    <section className="p-4 max-w-3xl mx-auto">
-      <h2 className="my-10 text-center font-semibold text-4xl">Work</h2>
+    <section className="mx-auto max-w-3xl p-4">
+      <h2 className="my-10 text-center text-4xl font-semibold">Work</h2>
 
       <ProjectNav />
 

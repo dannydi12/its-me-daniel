@@ -6,8 +6,8 @@ export default function Hero() {
   const [interacted, setInteracted] = useState(false);
 
   return (
-    <section className="bg-primary-500 min-h-[50vh] flex items-center flex-col justify-between">
-      <h1 className="text-white text-4xl sm:text-8xl font-bold my-auto text-center">
+    <section className="flex min-h-[50vh] flex-col items-center justify-between bg-primary-500">
+      <h1 className="my-auto text-center text-4xl font-bold text-white sm:text-8xl">
         Hi, it&apos;s me. Daniel.
       </h1>
 

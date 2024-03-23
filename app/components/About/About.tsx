@@ -28,8 +28,8 @@ export default function About() {
 <span class="hljs-punctuation">}</span>`;
 
   return (
-    <section className="p-4 max-w-3xl mx-auto">
-      <h2 className="m-10 text-center font-semibold text-[1.6rem]">
+    <section className="mx-auto max-w-3xl p-4">
+      <h2 className="m-10 text-center text-[1.6rem] font-semibold">
         I&apos;m a builder.
       </h2>
 
@@ -40,8 +40,8 @@ export default function About() {
         walks in nature, and I think Indie music is pretty cool.
       </p>
 
-      <p className="underline mt-10 mb-5">languages.json:</p>
-      <pre className="json hljs p-4 rounded-xl font-mono text-lg leading-6">
+      <p className="mb-5 mt-10 underline">languages.json:</p>
+      <pre className="json hljs rounded-xl p-4 font-mono text-lg leading-6">
         <code dangerouslySetInnerHTML={{ __html: htmlWithCursor }} />
       </pre>
 

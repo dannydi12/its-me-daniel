@@ -18,15 +18,15 @@ export default function Project({
   live,
 }: Props) {
   return (
-    <div className="h-fit max-w-[355px] mt-8 mb-12 shadow-md mx-auto">
-      <img className="w-full h-[185px] max-w-[355px]" src={image} alt={title} />
+    <div className="mx-auto mb-12 mt-8 h-fit max-w-[355px] shadow-md">
+      <img className="h-[185px] w-full max-w-[355px]" src={image} alt={title} />
       <div className="p-5">
-        <h3 className="text-[1.7rem] font-bold mb-3">{title}</h3>
+        <h3 className="mb-3 text-[1.7rem] font-bold">{title}</h3>
         <p>{description}</p>
-        <p className="text-gray-500 my-5">{languages.join(", ")}</p>
+        <p className="my-5 text-gray-500">{languages.join(", ")}</p>
         <div className="flex justify-around">
           <Link
-            className="text-primary-500 border-[3px] p-2 text-lg w-[30%] text-center border-primary-500 hover:bg-primary-500 hover:text-white"
+            className="w-[30%] border-[3px] border-primary-500 p-2 text-center text-lg text-primary-500 hover:bg-primary-500 hover:text-white"
             rel="noreferrer"
             target="_blank"
             onClick={() => clickEvent("Live", title)}
@@ -36,7 +36,7 @@ export default function Project({
           </Link>
           {repo && (
             <Link
-              className="text-primary-500 border-[3px] p-2 text-lg w-[30%] text-center border-primary-500 hover:bg-primary-500 hover:text-white"
+              className="w-[30%] border-[3px] border-primary-500 p-2 text-center text-lg text-primary-500 hover:bg-primary-500 hover:text-white"
               rel="noreferrer"
               target="_blank"
               onClick={() => clickEvent("Repo", title)}

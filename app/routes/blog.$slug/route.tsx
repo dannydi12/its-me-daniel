@@ -32,13 +32,13 @@ export default function PostSlug() {
 
   return (
     <>
-      <div className="bg-primary-500 min-h-[30vh] flex items-center justify-center sm:p-20 p-2">
-        <h1 className="text-5xl sm:text-7xl font-bold text-center text-white drop-shadow">
+      <div className="flex min-h-[30vh] items-center justify-center bg-primary-500 p-2 sm:p-20">
+        <h1 className="text-center text-5xl font-bold text-white drop-shadow sm:text-7xl">
           {meta.title}
         </h1>
       </div>
       <main
-        className="pt-12 sm:mx-auto m-5 prose sm:prose-lg prose-h2:text-4xl prose-img:mx-auto prose-h2:mb-5 prose-h2:sm:text-5xl prose-a:text-primary-600 prose-img:rounded-md prose-code:rounded-md prose-p:text-gray-950 prose-pre:p-0 prose-pre:bg-transparent prose-code:before:content-none prose-code:after:content-none prose-code:bg-gray-200 prose-code:px-2 prose-code:py-1 "
+        className="prose m-5 pt-12 sm:prose-lg prose-h2:mb-5 prose-h2:text-4xl prose-p:text-gray-950 prose-a:text-primary-600 prose-code:rounded-md prose-code:bg-gray-200 prose-code:px-2 prose-code:py-1 prose-code:before:content-none prose-code:after:content-none prose-pre:bg-transparent prose-pre:p-0 prose-img:mx-auto prose-img:rounded-md sm:mx-auto prose-h2:sm:text-5xl "
         dangerouslySetInnerHTML={{ __html: content }}
       />
     </>
