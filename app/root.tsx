@@ -1,4 +1,4 @@
-import { LinksFunction } from "@remix-run/node";
+import { HeadersFunction, LinksFunction } from "@remix-run/node";
 import {
   Links,
   Meta,
@@ -8,6 +8,13 @@ import {
   ScrollRestoration,
 } from "@remix-run/react";
 import stylesheet from "@/styles/index.css?url";
+
+export const headers: HeadersFunction = () => ({
+  // store in CDN for 1 year and mark as stale after 5 minutes but revalidate in the background
+  "Vercel-CDN-Cache-Control":
+    "public, s-maxage=300, stale-while-revalidate=31557600",
+  "Cache-Control": "public, max-age=0, must-revalidate",
+});
 
 export const meta: MetaFunction = () => {
   return [
