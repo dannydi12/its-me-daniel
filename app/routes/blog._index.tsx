@@ -38,12 +38,9 @@ export default function Blog() {
 
         <div className="sm:p-15 flex min-h-[30vh] items-center justify-center">
           <h1 className="my-10 text-center text-5xl font-bold text-white sm:my-0 sm:text-7xl">
-            Builder Blog
+            Hi, this is my blog.
           </h1>
         </div>
-        <p className="bottom-0 mx-auto hidden text-center text-8xl sm:block">
-          👷
-        </p>
       </header>
       <main className="mx-auto max-w-2xl px-4">
         <ul className="my-14 flex flex-col gap-6">
