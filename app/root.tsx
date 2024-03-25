@@ -10,10 +10,11 @@ import {
 import stylesheet from "@/styles/index.css?url";
 
 export const headers: HeadersFunction = () => ({
-  // store in CDN for 1 year and mark as stale after 5 minutes but revalidate in the background
+  // store in CDN for 1 year and mark as stale after 6 months but revalidate in the background
+  // store on disk for 5 minutes
   "Vercel-CDN-Cache-Control":
-    "public, s-maxage=300, stale-while-revalidate=31557600",
-  "Cache-Control": "public, max-age=0, must-revalidate",
+    "public, s-maxage=15778800, stale-while-revalidate=31557600",
+  "Cache-Control": "public, max-age=300, must-revalidate",
 });
 
 export const meta: MetaFunction = () => {
