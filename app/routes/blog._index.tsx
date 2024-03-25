@@ -16,7 +16,16 @@ export const links: LinksFunction = () => [
 export const loader = async () => {
   const posts = await buildPostList();
 
-  return json({ posts });
+  return json(
+    { posts },
+    {
+      headers: {
+        "Vercel-CDN-Cache-Control":
+          "public, s-maxage=15778800, stale-while-revalidate=31557600",
+        "Cache-Control": "public, max-age=300, must-revalidate",
+      },
+    }
+  );
 };
 
 export default function Blog() {

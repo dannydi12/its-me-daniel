@@ -24,10 +24,19 @@ export const meta: MetaFunction<typeof loader> = ({ data }) => {
 export const loader = async ({ params }: LoaderFunctionArgs) => {
   const result = await parseMarkdown(params.slug || "");
 
-  return json({
-    content: result.toString(),
-    meta: result.data.frontmatter as FrontMatterData,
-  });
+  return json(
+    {
+      content: result.toString(),
+      meta: result.data.frontmatter as FrontMatterData,
+    },
+    {
+      headers: {
+        "Vercel-CDN-Cache-Control":
+          "public, s-maxage=15778800, stale-while-revalidate=31557600",
+        "Cache-Control": "public, max-age=300, must-revalidate",
+      },
+    }
+  );
 };
 
 export default function PostSlug() {
