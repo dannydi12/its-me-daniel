@@ -21,7 +21,7 @@ export async function action({ request }: ActionFunctionArgs) {
 
   await bot.sendMessage(
     process.env.TELEGRAM_CHANNEL as string,
-    `Someone tried to scare you 👻\n\nMetadata: ${metadata}`
+    `Someone tried to scare you 👻\nMetadata: ${metadata}`
   );
 
   // Make sure its between 8am and 10pm PST... I like my sleep
