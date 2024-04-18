@@ -5,10 +5,7 @@ import TelegramBot from "node-telegram-bot-api";
 export async function action({ request }: ActionFunctionArgs) {
   // Notify me on my phone through Telegram in case I'm not home
   const bot = new TelegramBot(process.env.TELEGRAM_TOKEN as string);
-  await bot.sendMessage(
-    process.env.TELEGRAM_CHANNEL as string,
-    "Someone tried to scare you 👻"
-  );
+  let metadata = "";
 
   // follow up with extra user information
   const ip = request.headers.get("x-forwarded-for");
@@ -19,11 +16,13 @@ export async function action({ request }: ActionFunctionArgs) {
 
     const userData = await res.json();
 
-    await bot.sendMessage(
-      process.env.TELEGRAM_CHANNEL as string,
-      `From ${ip}:\n${JSON.stringify(userData, null, 2)}`
-    );
+    metadata = `${ip}, ${userData.city}, ${userData.region}, ${userData.org}`;
   }
+
+  await bot.sendMessage(
+    process.env.TELEGRAM_CHANNEL as string,
+    `Someone tried to scare you 👻\n\nMetadata: ${metadata}`
+  );
 
   // Make sure its between 8am and 10pm PST... I like my sleep
   const currentTimePST = DateTime.now().setZone("America/Los_Angeles").hour;
