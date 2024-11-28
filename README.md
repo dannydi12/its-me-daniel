@@ -16,6 +16,7 @@ With these goals in mind, I approached the design with these three principals:
 
 ## Installation
 
+
 #### `npm install`
 
 Installs all the required dependencies. Run this before anything else.
