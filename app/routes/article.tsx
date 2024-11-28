@@ -1,30 +1,25 @@
-import type {
-  LinksFunction,
-  LoaderFunctionArgs,
-  MetaFunction,
-} from "@remix-run/node";
-import { json } from "@remix-run/node";
-import { Link, useLoaderData } from "@remix-run/react";
+import { data, Link, useLoaderData } from "react-router";
 import { parseMarkdown } from "../utils/markdownParsing";
 import { ChevronLeftIcon, ClockIcon } from "@heroicons/react/24/solid";
 
 import syntaxHighlighting from "highlight.js/styles/base16/bright.min.css?url";
 import syntaxHighlightingOverride from "@/styles/blog-syntax-highlighting-override.css?url";
 import { FrontMatterData } from "@/utils/frontmatter.types";
+import type { Route } from "./+types/article";
 
-export const links: LinksFunction = () => [
+export const links: Route.LinksFunction = () => [
   { rel: "stylesheet", href: syntaxHighlighting },
   { rel: "stylesheet", href: syntaxHighlightingOverride },
 ];
 
-export const meta: MetaFunction<typeof loader> = ({ data }) => {
+export const meta: Route.MetaFunction = ({ data }) => {
   return [{ title: `${data?.meta?.title} | Daniel Di Venere` }];
 };
 
-export const loader = async ({ params }: LoaderFunctionArgs) => {
+export const loader = async ({ params }: Route.LoaderArgs) => {
   const result = await parseMarkdown(params.slug || "");
 
-  return json(
+  return data(
     {
       content: result.toString(),
       meta: result.data.frontmatter as FrontMatterData,
@@ -39,8 +34,8 @@ export const loader = async ({ params }: LoaderFunctionArgs) => {
   );
 };
 
-export default function PostSlug() {
-  const { content, meta } = useLoaderData<typeof loader>();
+export default function PostSlug({ loaderData }: Route.ComponentProps) {
+  const { content, meta } = loaderData;
 
   return (
     <>

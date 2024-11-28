@@ -1,8 +1,8 @@
-import { ActionFunctionArgs } from "@remix-run/node";
 import { DateTime } from "luxon";
 import TelegramBot from "node-telegram-bot-api";
+import { Route } from "./+types/surprise";
 
-export async function action({ request }: ActionFunctionArgs) {
+export async function action({ request }: Route.ActionArgs) {
   // Notify me on my phone through Telegram in case I'm not home
   const bot = new TelegramBot(process.env.TELEGRAM_TOKEN as string);
   let metadata = "";

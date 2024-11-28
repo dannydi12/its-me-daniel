@@ -1,7 +1,7 @@
-node_modules
-
-/.cache
-/build
 .env
+!.env.example
 .DS_Store
-.yarn
+.react-router
+build
+node_modules
+*.tsbuildinfo

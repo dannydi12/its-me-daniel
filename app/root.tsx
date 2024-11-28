@@ -1,15 +1,16 @@
-import { HeadersFunction, LinksFunction } from "@remix-run/node";
 import {
+  isRouteErrorResponse,
   Links,
   Meta,
-  MetaFunction,
   Outlet,
   Scripts,
   ScrollRestoration,
-} from "@remix-run/react";
+} from "react-router";
+
+import type { Route } from "./+types/root";
 import stylesheet from "@/styles/index.css?url";
 
-export const headers: HeadersFunction = () => ({
+export const headers: Route.HeadersFunction = () => ({
   // store in CDN for 1 year and mark as stale after 6 months but revalidate in the background
   // store on disk for 5 minutes
   "Vercel-CDN-Cache-Control":
@@ -17,11 +18,11 @@ export const headers: HeadersFunction = () => ({
   "Cache-Control": "public, max-age=300, must-revalidate",
 });
 
-export const meta: MetaFunction = () => {
+export const meta: Route.MetaFunction = () => {
   return [{ title: "Daniel DiVenere | Portfolio" }];
 };
 
-export const links: LinksFunction = () => [
+export const links: Route.LinksFunction = () => [
   {
     rel: "apple-touch-icon",
     size: "180x180",
@@ -109,4 +110,33 @@ export function Layout({ children }: { children: React.ReactNode }) {
 
 export default function App() {
   return <Outlet />;
+}
+
+export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
+  let message = "Oops!";
+  let details = "An unexpected error occurred.";
+  let stack: string | undefined;
+
+  if (isRouteErrorResponse(error)) {
+    message = error.status === 404 ? "404" : "Error";
+    details =
+      error.status === 404
+        ? "The requested page could not be found."
+        : error.statusText || details;
+  } else if (import.meta.env.DEV && error && error instanceof Error) {
+    details = error.message;
+    stack = error.stack;
+  }
+
+  return (
+    <main className="pt-16 p-4 container mx-auto">
+      <h1>{message}</h1>
+      <p>{details}</p>
+      {stack && (
+        <pre className="w-full p-4 overflow-x-auto">
+          <code>{stack}</code>
+        </pre>
+      )}
+    </main>
+  );
 }

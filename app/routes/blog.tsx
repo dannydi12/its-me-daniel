@@ -1,14 +1,13 @@
-import type { LinksFunction } from "@remix-run/node";
-import { json } from "@remix-run/node";
-import { Link, useLoaderData } from "@remix-run/react";
+import { data, Link } from "react-router";
 import { ChevronLeftIcon, ClockIcon } from "@heroicons/react/20/solid";
 
 import syntaxHighlighting from "highlight.js/styles/base16/bright.min.css?url";
 import syntaxHighlightingOverride from "@/styles/blog-syntax-highlighting-override.css?url";
 import { buildPostList } from "../utils/markdownParsing";
 import Tag from "@/components/Tag";
+import type { Route } from "./+types/blog";
 
-export const links: LinksFunction = () => [
+export const links: Route.LinksFunction = () => [
   { rel: "stylesheet", href: syntaxHighlighting },
   { rel: "stylesheet", href: syntaxHighlightingOverride },
 ];
@@ -16,7 +15,7 @@ export const links: LinksFunction = () => [
 export const loader = async () => {
   const posts = await buildPostList();
 
-  return json(
+  return data(
     { posts },
     {
       headers: {
@@ -28,8 +27,8 @@ export const loader = async () => {
   );
 };
 
-export default function Blog() {
-  const { posts } = useLoaderData<typeof loader>();
+export default function Blog({loaderData}: Route.ComponentProps) {
+  const { posts } = loaderData;
 
   const sortedPosts = posts
     .map((post) => ({ ...post, Date: new Date(post.Date || 0) }))

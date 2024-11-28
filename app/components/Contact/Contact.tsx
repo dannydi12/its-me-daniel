@@ -1,4 +1,4 @@
-import { Link, useFetcher } from "@remix-run/react";
+import { Link, useFetcher } from "react-router";
 import TimeBasedMesage from "./TimeBasedMessage";
 import { clickEvent, hoverEvent } from "./tracking";
 import { action } from "@/routes/surprise";
@@ -72,7 +72,7 @@ export default function Contact() {
       <fetcher.Form action="/surprise" method="post" preventScrollReset>
         <button
           type="submit"
-          onClick={() => {
+          onClick={(e) => {
             clickEvent("Scare Daniel");
           }}
           disabled={!!fetcher.data || fetcher.state !== "idle"}

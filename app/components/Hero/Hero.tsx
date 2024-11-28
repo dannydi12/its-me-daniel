@@ -1,7 +1,7 @@
 import { useState } from "react";
 import scaredSVG from "assets/scared.svg?url";
 import happySVG from "assets/happy.svg?url";
-import { Link } from "@remix-run/react";
+import { Link } from "react-router";
 
 export default function Hero() {
   const [interacted, setInteracted] = useState(false);

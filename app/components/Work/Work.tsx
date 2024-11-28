@@ -1,5 +1,5 @@
 import STORE from "./project-store";
-import { useSearchParams } from "@remix-run/react";
+import { useSearchParams } from "react-router";
 import ProjectNav from "./ProjectNav";
 import Project from "./Project";
 

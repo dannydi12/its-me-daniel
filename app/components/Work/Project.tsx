@@ -1,4 +1,4 @@
-import { Link } from "@remix-run/react";
+import { Link } from "react-router";
 import { clickEvent } from "../Contact/tracking";
 
 type Props = {
