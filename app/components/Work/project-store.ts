@@ -75,7 +75,7 @@ const STORE = [
       "Single-night hackathon project to track property sales and acquisitions in Lahaina after the Maui fires. Twitter post went viral with 500k impressions and news coverage.",
     image: landgrabScreenShot,
     languages: ["React", "Typescript", "MapBox"],
-    live: "https://landgrabwatch.com/",
+    live: "https://landgrab.danthebuilder.com/",
   },
   {
     title: "Emotional Support Bot",
