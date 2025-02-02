@@ -159,7 +159,7 @@ const STORE = [
     image: cmmScreenShot,
     languages: ["HTML", "CSS", "JavaScript", "jQuery"],
     repo: "https://github.com/dannydi12/chocolate-milk-media",
-    live: "https://chocolatemilkmedia.com",
+    live: "chocolate.danthebuilder.com",
   },
   {
     title: "My Portfolio",
